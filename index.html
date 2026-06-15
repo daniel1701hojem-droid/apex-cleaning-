@@ -135,11 +135,10 @@
       
       <!-- Ambient Image Background with gradient mesh filter -->
       <div class="absolute inset-0 z-0">
-        <!-- Det brukes enten lokal bane eller et stilig placeholder-bilde fra unsplash -->
         <img 
-          src="./src/assets/images/hero_bg_1781524160946.jpg" 
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1800&auto=format&fit=crop" 
           alt="Profesjonell vinduspuss i Oslo" 
-          class="w-full h-full object-cover object-center opacity-45 select-none pointer-events-none scale-105"
+          class="w-full h-full object-cover object-center opacity-45 select-none pointer-events-none scale-105 animate-[subtle-zoom_20s_ease-out_infinite]"
         >
         <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/75 to-transparent"></div>
         <div class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#FCFCFC] to-transparent z-10"></div>
@@ -201,11 +200,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
           <!-- Image grid block -->
-          <div class="lg:col-span-5 relative space-y-4">
+          <div class="lg:col-span-12 xl:col-span-5 relative space-y-4">
             <div class="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/5] bg-zinc-100 border border-zinc-200">
               <img 
-                src="./src/assets/images/pure_water_cleaning_1781524179369.jpg" 
-                onerror="this.src='https://images.unsplash.com/photo-1527251175122-8e860e45ba20?q=80&w=600&auto=format&fit=crop'"
+                src="https://images.unsplash.com/photo-1542362567-b07eac79094f?auto=format&fit=crop&w=800&q=80" 
                 alt="Rentvannssystem fra Apex Cleaning" 
                 class="w-full h-full object-cover"
               >
@@ -222,7 +220,7 @@
           </div>
 
           <!-- Pure text blocks explanation -->
-          <div class="lg:col-span-7 space-y-6 lg:pl-4">
+          <div class="lg:col-span-12 xl:col-span-7 space-y-6 lg:pl-4">
             
             <div class="space-y-2">
               <span class="text-sm font-bold font-mono text-zinc-400 uppercase tracking-widest block">OM APEX CLEANING</span>
@@ -246,7 +244,7 @@
                 <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-orange shrink-0 mt-0.5"></i>
                 <div>
                   <h4 class="font-bold text-brand-black text-sm">Alt-i-ett partner</h4>
-                  <p class="text-xs text-zinc-550">Fra små butikker to store næringsbygg.</p>
+                  <p class="text-xs text-zinc-550">Fra små butikker til store næringsbygg.</p>
                 </div>
               </div>
               <div class="flex space-x-3">
@@ -503,7 +501,7 @@
             </div>
             <h3 class="text-md sm:text-lg font-bold font-display text-white tracking-tight">Opptil 20 meter fra bakken</h3>
             <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-              Våre lette og ultra-stive karbonstenger gir oss mulighet til å nå svært høyt med presisjon.
+              Våre lette og ultra-stive karbonstenger giv oss mulighet til å nå svært høyt med presisjon.
             </p>
           </div>
 
@@ -675,7 +673,7 @@
           </h2>
           <div class="h-1 w-20 bg-brand-orange mx-auto rounded-full"></div>
           <p class="text-zinc-650 text-sm sm:text-base leading-relaxed">
-            Her vil du etter hvert kunne legge til egne utførte referanseprosjekter i Stor-Oslo. Våre eksempelkort her viser hvordan referansene dine kan presenteres profesjonelt.
+            Se her eksempler på utførte oppdrag og referanseprosjekter i Stor-Oslo, komplett med ekte bilder av fasader og renhold.
           </p>
         </div>
 
@@ -687,50 +685,78 @@
           <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-zinc-600 border border-zinc-200 hover:bg-zinc-100 transition-colors">Næringsbygg</button>
         </div>
 
-        <!-- Dynamic Empty References with placeholders -->
+        <!-- Real high-contrast reference projects with beautiful building facade images from Unsplash -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          <div class="border-2 border-dashed border-zinc-300 bg-white/70 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 text-zinc-500 min-h-[320px] shadow-sm hover:border-brand-orange/40 transition-colors duration-300">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="bg-zinc-150 text-zinc-550 text-[10px] font-bold py-1.5 px-2.5 rounded border border-zinc-200 uppercase tracking-wider">
-                  Borettslag / Sameie
-                </span>
-                <span class="text-[10px] font-bold font-mono text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">LEDIG PLASS</span>
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-zinc-150 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative h-64 sm:h-72 overflow-hidden bg-zinc-100 shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                alt="Sannergata Borettslag"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-brand-orange text-white text-[10px] font-bold py-1.5 px-3 rounded-md uppercase tracking-wider shadow-md">
+                Borettslag
+              </span>
+              <div class="absolute bottom-4 left-4 right-4 text-white space-y-1">
+                <h3 class="text-lg sm:text-xl font-bold font-display tracking-tight text-white leading-tight">
+                  Sannergata Borettslag
+                </h3>
+                <p class="text-xs text-gray-300 flex items-center">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 mr-1 text-brand-orange shrink-0"></i>
+                  <span>Oslo, Grünerløkka</span>
+                </p>
               </div>
-              <h3 class="text-lg sm:text-xl font-bold font-display text-zinc-700 tracking-tight">
-                Eksempel: Sannergata Borettslag
-              </h3>
-              <p class="text-zinc-550 text-xs sm:text-sm leading-relaxed">
-                Dette er en ledig plassholderstruktur for dine referanseprosjekter. Når du fyller ut listen <code class="bg-zinc-150 text-zinc-800 px-1.5 py-0.5 rounded text-xs font-mono border border-zinc-200">REFERENCES_DATA</code> i filen <code class="bg-zinc-150 text-zinc-800 px-1.5 py-0.5 rounded text-xs font-mono border border-zinc-200">src/data.ts</code>, vil dine ekte kort med egne bilder, tekster og tagger vises her automatisk.
-              </p>
             </div>
-            <div class="border-t border-zinc-150 pt-4 flex flex-wrap items-center gap-1.5">
-              <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Vindusvask</span>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Rentvannsteknologi</span>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+              <p class="text-zinc-650 text-xs sm:text-sm leading-relaxed">
+                Komplett utvendig vindusvask av 140 leiligheter inkludert fellesområder og glassbalkonger. Utført trygt fra bakken med deionisert rentvann uten liftleie.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 pt-3 border-t border-zinc-100 mt-auto">
+                <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Vindusvask</span>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Glassbalkonger</span>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Rentvannsteknologi</span>
+              </div>
             </div>
           </div>
 
-          <div class="border-2 border-dashed border-zinc-300 bg-white/70 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 text-zinc-500 min-h-[320px] shadow-sm hover:border-brand-orange/40 transition-colors duration-300">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="bg-zinc-150 text-zinc-550 text-[10px] font-bold py-1.5 px-2.5 rounded border border-zinc-200 uppercase tracking-wider">
-                  Næringsbygg / Butikk
-                </span>
-                <span class="text-[10px] font-bold font-mono text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">LEDIG PLASS</span>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl overflow-hidden border border-zinc-150 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col group">
+            <div class="relative h-64 sm:h-72 overflow-hidden bg-zinc-100 shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&auto=format&fit=crop&w=800"
+                alt="Næringsbygg på Nydalen"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                referrerPolicy="no-referrer"
+              >
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-brand-orange text-white text-[10px] font-bold py-1.5 px-3 rounded-md uppercase tracking-wider shadow-md">
+                Næringsbygg
+              </span>
+              <div class="absolute bottom-4 left-4 right-4 text-white space-y-1">
+                <h3 class="text-lg sm:text-xl font-bold font-display tracking-tight text-white leading-tight">
+                  Næringsbygg på Nydalen
+                </h3>
+                <p class="text-xs text-gray-300 flex items-center">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 mr-1 text-brand-orange shrink-0"></i>
+                  <span>Oslo, Nydalen</span>
+                </p>
               </div>
-              <h3 class="text-lg sm:text-xl font-bold font-display text-zinc-700 tracking-tight">
-                Eksempel: Næringsbygg på Nydalen
-              </h3>
-              <p class="text-zinc-550 text-xs sm:text-sm leading-relaxed">
-                Du kan legge til så mange referanser du ønsker! Du kan fritt kategorisere dem etter dine egne behov. Bruk kategorier som <strong>Borettslag</strong>, <strong>Sameier</strong>, <strong>Butikklokaler</strong> eller <strong>Næringsbygg</strong> for å få filterknappene over to fungere.
-              </p>
             </div>
-            <div class="border-t border-zinc-150 pt-4 flex flex-wrap items-center gap-1.5">
-              <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Fasadevask</span>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Rentvannssystem</span>
+            <div class="p-6 flex-grow flex flex-col justify-between space-y-4">
+              <p class="text-zinc-650 text-xs sm:text-sm leading-relaxed">
+                Periodisk fasadevask og utvendig vinduspuss av moderne glassfasader. Optimalisert kostnadseffektivitet med karbonstenger og null liftleie.
+              </p>
+              <div class="flex flex-wrap items-center gap-1.5 pt-3 border-t border-zinc-100 mt-auto">
+                <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Fasadevask</span>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Vinduspuss</span>
+                <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200">Karbonstenger</span>
+              </div>
             </div>
           </div>
 
@@ -830,7 +856,7 @@
               <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
                 <span class="flex items-center pr-4">
                   <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
-                  <span>Trenger dere tilgang til strøm eller vann på stedet?</span>
+                  <span>Trenger dere tilgang till strøm eller vann på stedet?</span>
                 </span>
                 <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
               </button>
@@ -1076,7 +1102,7 @@
       });
     });
 
-    // Initial load: keep first FAQ active active
+    // Initial load: keep first FAQ active
     const firstFAQ = document.querySelector('.faq-item');
     if (firstFAQ) {
       firstFAQ.querySelector('.faq-content').classList.remove('hidden');
