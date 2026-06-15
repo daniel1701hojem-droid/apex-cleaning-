@@ -98,7 +98,7 @@
           </a>
         </div>
 
-        <!-- Mobile Menu Toggle Button -->
+        <!-- Mobile Menu Toggle Button (Hambuger) -->
         <button id="mobile-menu-toggle" type="button" class="md:hidden p-2 rounded-lg text-zinc-650 hover:bg-zinc-100 hover:text-brand-orange transition-all focus:outline-none" aria-label="Toggle meny">
           <i id="menu-icon" data-lucide="menu" class="w-6 h-6"></i>
         </button>
@@ -135,8 +135,9 @@
       
       <!-- Ambient Image Background with gradient mesh filter -->
       <div class="absolute inset-0 z-0">
+        <!-- Det brukes enten lokal bane eller et stilig placeholder-bilde fra unsplash -->
         <img 
-          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1800&auto=format&fit=crop" 
+          src="./src/assets/images/hero_bg_1781524160946.jpg" 
           alt="Profesjonell vinduspuss i Oslo" 
           class="w-full h-full object-cover object-center opacity-45 select-none pointer-events-none scale-105"
         >
@@ -492,7 +493,7 @@
           </p>
         </div>
 
-        <!-- Benefits grid containing 6 items -->
+        <!-- Benefits grid containing 6 beautiful items -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Benefit 1 -->
@@ -594,7 +595,7 @@
         
         <!-- Headers -->
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-sm font-bold font-mono text-zinc-400 uppercase tracking-widest block font-display">VÅR ARBEIDSPROSESS</span>
+          <span class="text-sm font-bold font-mono text-zinc-400 uppercase tracking-widest block">VÅR ARBEIDSPROSESS</span>
           <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display">
             Hvordan vi jobber sammen
           </h2>
@@ -686,7 +687,7 @@
           <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-zinc-600 border border-zinc-200 hover:bg-zinc-100 transition-colors">Næringsbygg</button>
         </div>
 
-        <!-- Dynamic Empty References with elegant placeholders for the customer to fill out in future data.ts -->
+        <!-- Dynamic Empty References with placeholders -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           
           <div class="border-2 border-dashed border-zinc-300 bg-white/70 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 text-zinc-500 min-h-[320px] shadow-sm hover:border-brand-orange/40 transition-colors duration-300">
@@ -723,7 +724,7 @@
                 Eksempel: Næringsbygg på Nydalen
               </h3>
               <p class="text-zinc-550 text-xs sm:text-sm leading-relaxed">
-                Du kan legge til så mange referanser du ønsker! Du kan fritt kategorisere dem etter dine egne behov. Bruk kategorier som <strong>Borettslag</strong>, <strong>Sameier</strong>, <strong>Butikklokaler</strong> eller <strong>Næringsbygg</strong> for å få filterknappene over to å fungere.
+                Du kan legge til så mange referanser du ønsker! Du kan fritt kategorisere dem etter dine egne behov. Bruk kategorier som <strong>Borettslag</strong>, <strong>Sameier</strong>, <strong>Butikklokaler</strong> eller <strong>Næringsbygg</strong> for å få filterknappene over to fungere.
               </p>
             </div>
             <div class="border-t border-zinc-150 pt-4 flex flex-wrap items-center gap-1.5">
@@ -757,7 +758,7 @@
           </p>
         </div>
 
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <div class="max-w-xl mx-auto">
           
           <!-- Quick Contacts Panel -->
           <div class="bg-brand-black text-white p-6 sm:p-8 rounded-2xl border border-zinc-800 flex flex-col justify-between space-y-8 shadow-xl">
@@ -797,44 +798,6 @@
             </div>
           </div>
 
-          <!-- Areas Covered Box / Oslo validation tags -->
-          <div class="bg-zinc-50 border border-zinc-200 p-6 sm:p-8 rounded-2xl flex flex-col justify-between space-y-6">
-            <div class="space-y-4">
-              <h4 class="text-xs font-bold font-mono text-zinc-550 uppercase tracking-widest flex items-center">
-                <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange mr-1.5 shrink-0"></i>
-                <span>Vi dekker hele Stor-Oslo</span>
-              </h4>
-              <p class="text-xs text-zinc-650 leading-relaxed font-normal">
-                Vi utfører profesjonell vindus- og fasadevask i alle bydeler i Oslo og tilstøtende kommuner:
-              </p>
-              
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Sentrum</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Grünerløkka</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Frogner</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Majorstuen</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">St. Hanshaugen</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Nydalen</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Økern</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Ullern</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Nordstrand</span>
-                <span class="text-[10px] font-semibold bg-white text-zinc-700 py-1 px-2.5 rounded-md border border-zinc-200">Vestre Aker</span>
-                <span class="text-[10px] font-semibold bg-brand-orange/10 text-brand-orange py-1 px-2.5 rounded-md border border-brand-orange/20">+ Akershus og omegn</span>
-              </div>
-            </div>
-
-            <!-- Health declaration info -->
-            <div class="border-t border-zinc-200 pt-4 space-y-3">
-              <div class="flex items-center space-x-2 text-xs font-bold text-zinc-700">
-                <i data-lucide="shield-check" class="w-4 h-4 text-brand-orange shrink-0"></i>
-                <span>Vi oppfyller alle lovpålagte HMS-krav</span>
-              </div>
-              <p class="text-[11px] text-zinc-550 leading-normal font-normal">
-                Sikkerhet for våre renholdere og dine områder er førsteprioritet. Alle oppdrag planlegges og utføres i tråd med HMS-forskriftene.
-              </p>
-            </div>
-          </div>
-
         </div>
 
         <!-- HIGH-TRUST FAQ ACCORDION INNER BLOCK -->
@@ -848,57 +811,81 @@
             
             <!-- Accordion FAQ 1 -->
             <div class="faq-item bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200">
-              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none focus:ring-0">
-                <span class="flex items-center">
+              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
+                <span class="flex items-center pr-4">
                   <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
-                  <span>Hva er forskjell på vanlig vann og Rentvannsystem?</span>
+                  <span>Hva er et rentvannssystem?</span>
                 </span>
-                <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
+                <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
               </button>
               <div class="faq-content hidden px-6 pb-5 pt-1 text-zinc-650 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 bg-white">
-                Rentvannsteknologi (også kjent som ultra-rent vann) bruker vann som er filtrert gjennom et flertrinns deioniseringssystem. Dette vannet er helt fritt for kalk, mineraler og partikler. Siden vannet er kjemisk rent, "suger" det naturlig til seg smuss uten såpe. Når vinduet tørker, tørker det helt stripefritt og uten flekker, og det blir ingen såperester igjen som kan tiltrekke seg nytt smuss.
+                <p>
+                  Et rentvannssystem (også kjent som ultrarent vann eller ultra-pure water) filtrerer vanlig kranvann gjennom omvendt osmose og deionisering. Vannet blir 100% fritt for kalk, mineraler og partikler. Når vi børster glasset med dette vannet, tiltrekker det seg smuss som en magnet, og vinduene tørker helt naturlig, stripefritt og uten såpehinner som ny smuss kan feste seg på. I tillegg er det 100% miljøvennlig uten såpe!
+                </p>
               </div>
             </div>
 
             <!-- Accordion FAQ 2 -->
             <div class="faq-item bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200">
-              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none focus:ring-0">
-                <span class="flex items-center">
+              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
+                <span class="flex items-center pr-4">
                   <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
-                  <span>Er dere offentlig godkjent renholdsbedrift?</span>
+                  <span>Trenger dere tilgang til strøm eller vann på stedet?</span>
                 </span>
-                <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
+                <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
               </button>
               <div class="faq-content hidden px-6 pb-5 pt-1 text-zinc-650 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 bg-white">
-                Ja, Apex Cleaning er en offentlig godkjent renholdsbedrift av Arbeidstilsynet. Alle våre medarbeidere bærer gyldige HMS-kort for renholdsbransjen. Det gir deg som kunde trygghet for at renholdet blir utført under skikkelige forhold etter norsk regelverk.
+                <p>
+                  Vi trenger tilgang til en vanlig utvendig vannkran på stedet. Vi har ellers normalt med eget batteridrevet pumpeutstyr, så strøm er sjeldent et krav.
+                </p>
               </div>
             </div>
 
             <!-- Accordion FAQ 3 -->
             <div class="faq-item bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200">
-              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none focus:ring-0">
-                <span class="flex items-center">
+              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
+                <span class="flex items-center pr-4">
                   <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
-                  <span>Hvor ofte bør vi vaske fasaden på bygget?</span>
+                  <span>Er det trygt med teleskopstang opp til 20 meter?</span>
                 </span>
-                <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
+                <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
               </button>
               <div class="faq-content hidden px-6 pb-5 pt-1 text-zinc-650 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 bg-white">
-                Normalt anbefales en profesjonell fasadevask en gang i året, gjerne om våren for å vaske bort vinterens forurensning, sot og veistøv. Dette forhindrer mose- og algevekst i å slå rot i porene på tre, mur, betong og metallplater, og beskytter og forlenger byggets kledning betraktelig.
+                <p>
+                  Ja, det er ekstremt trygt! Våre teleskopstenger er laget av lette, men ekstremt stabile karbonfibermaterialer spesifikt designet for høytrykksrengjøring. Ved å vaske fra bakken fjerner vi behovet for at renholdere jobber i høyden med fallrisiko, noe som reduserer faren for ulykker til tilnærmet null.
+                </p>
               </div>
             </div>
 
             <!-- Accordion FAQ 4 -->
             <div class="faq-item bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200">
-              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none focus:ring-0">
-                <span class="flex items-center">
+              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
+                <span class="flex items-center pr-4">
                   <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
-                  <span>Vi trenger vindusvask til 4. etasje, må dere leie lift?</span>
+                  <span>Hvordan varsler vi beboerne i forkant av vindusvasken?</span>
                 </span>
-                <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
+                <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
               </button>
               <div class="faq-content hidden px-6 pb-5 pt-1 text-zinc-650 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 bg-white">
-                Nei, i de aller fleste tilfeller slipper vi krevende og kostbar liftleie. Ved hjelp av våre lette, ultra-stive teleskopstenger kan vi utføre vindusvask og fasaderens med ultra-rent vann direkte fra bakken i opptil 20 meters høyde (tilsvarer omtrent 5-6 etasjer). Ved hindringer der stang ikke strekker til, planlegger vi eventuelt lift eller tilgang, men det er ekstremt sjelden på ordinære flater.
+                <p>
+                  God planlegging er nøkkelen til et vellykket oppdrag i borettslag. Vi leverer ferdiglagde, tydelige informasjonsskriv med datoer og klokkeslett som styret enkelt kan distribuere digitalt (på epost/sms/Viber) eller henge opp i oppgangene i god tid. Vi koordinerer også direkte med vaktmester.
+                </p>
+              </div>
+            </div>
+
+            <!-- Accordion FAQ 5 -->
+            <div class="faq-item bg-zinc-50 border border-zinc-200 rounded-xl overflow-hidden transition-all duration-200">
+              <button type="button" class="faq-btn w-full px-6 py-4 text-left flex items-center justify-between text-brand-black hover:text-brand-orange font-bold text-sm sm:text-base focus:outline-none">
+                <span class="flex items-center pr-4">
+                  <i data-lucide="help-circle" class="w-5 h-5 mr-3 text-brand-orange shrink-0"></i>
+                  <span>Er dere godkjente renholdere (HMS-kort)?</span>
+                </span>
+                <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-zinc-400 shrink-0 transition-transform"></i>
+              </button>
+              <div class="faq-content hidden px-6 pb-5 pt-1 text-zinc-650 text-xs sm:text-sm leading-relaxed border-t border-zinc-200 bg-white">
+                <p>
+                  Ja, selvfølgelig. Apex Cleaning er en lovlig og offentlig registrert renholdsbedrift. Alle våre ansatte bærer godkjent HMS-kort fra Arbeidstilsynet godt synlig under arbeidet, og vi følger strenge standarder for sikkerhet på arbeidsplassen.
+                </p>
               </div>
             </div>
 
@@ -911,76 +898,96 @@
   </main>
 
 
-  <!-- CORPORATE TRUST FOOTER & SEO KEYWORD DIRECTORY -->
-  <footer class="bg-brand-black text-white pt-20 pb-10 border-t border-zinc-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- CORPORATE TRUST FOOTER & LOCAL SEARCH KEYWORD DIRECTORY -->
+  <footer class="bg-brand-black text-white border-t border-zinc-800 pt-16 pb-24 sm:pb-16 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 relative z-10">
       
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 sm:gap-16 pb-16 border-b border-zinc-800">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
         
-        <!-- About column -->
-        <div class="md:col-span-5 space-y-6">
-          <a href="#hjem" class="flex items-center space-x-2">
-            <div class="bg-brand-orange p-1.5 rounded-md text-white font-black">
-              <span class="text-[10px] tracking-wider font-mono">APEX</span>
-            </div>
-            <span class="text-xl font-bold font-display text-white tracking-tight">Cleaning.</span>
-          </a>
-          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed font-normal">
-            Apex Cleaning leverer ledende utvendig renhold av vinduer, glass, balkeonger og fasader i Stor-Oslo til konkurransedyktige priser uten unødvendig liftleie.
-          </p>
-          <div class="flex items-center space-x-3 text-xs text-brand-orange font-bold font-mono">
-            <i data-lucide="check-shield" class="w-4 h-4"></i>
-            <span>OFFENTLIG GODKJENT RENHOLDSBEDRIFT</span>
-          </div>
-        </div>
-
-        <!-- Links column -->
-        <div class="md:col-span-3 space-y-4">
-          <h4 class="text-xs font-bold font-mono tracking-widest text-zinc-300 uppercase">Hurtiglenker</h4>
-          <ul class="space-y-2 text-xs sm:text-sm font-medium">
-            <li><a href="#om-oss" class="text-zinc-400 hover:text-brand-orange">Om selskapet</a></li>
-            <li><a href="#tjenester" class="text-zinc-400 hover:text-brand-orange">Våre tjenester</a></li>
-            <li><a href="#fordeler" class="text-zinc-400 hover:text-brand-orange">Fordeler & Sikkerhet</a></li>
-            <li><a href="#prosjekter" class="text-zinc-400 hover:text-brand-orange">Referanser</a></li>
-            <li><a href="#kontakt" class="text-zinc-400 hover:text-brand-orange">Be om befaring</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact details column -->
+        <!-- Info Column -->
         <div class="md:col-span-4 space-y-4">
-          <h4 class="text-xs font-bold font-mono tracking-widest text-zinc-300 uppercase">Kontaktdetaljer</h4>
-          <ul class="space-y-4 text-xs sm:text-sm text-zinc-350">
-            <li class="flex items-start">
-              <i data-lucide="phone" class="w-4 h-4 text-brand-orange mr-3 shrink-0 mt-0.5"></i>
-              <div>
-                <p class="text-zinc-500 text-[10px] uppercase font-mono tracking-wider">Ring oss direkte</p>
-                <a href="tel:45477027" class="text-white hover:text-brand-orange font-bold font-display text-base">454 77 027</a>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <i data-lucide="mail" class="w-4 h-4 text-brand-orange mr-3 shrink-0 mt-0.5"></i>
-              <div>
-                <p class="text-zinc-500 text-[10px] uppercase font-mono tracking-wider">Send oss e-post</p>
-                <a href="mailto:daniel.hojem@hotmail.no" class="text-white hover:text-brand-orange font-semibold">daniel.hojem@hotmail.no</a>
-              </div>
-            </li>
-            <li class="flex items-start">
-              <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange mr-3 shrink-0 mt-0.5"></i>
-              <div>
-                <p class="text-zinc-400 font-medium">Oslo og omegn, Norge</p>
-              </div>
-            </li>
+          <a href="#hjem" class="flex items-center space-x-2 outline-none">
+            <div class="bg-brand-orange p-1.5 rounded-lg text-white font-black">
+              <span class="text-xs tracking-wider font-mono">APEX</span>
+            </div>
+            <span class="text-xl font-bold font-display text-white tracking-tight">
+              Cleaning<span class="text-brand-orange">.</span>
+            </span>
+          </a>
+          <p class="text-xs text-zinc-400 leading-relaxed max-w-sm">
+            Eksperter på utvendig renhold av glass, fasader og flater i Oslo-regionen. Vi kombinerer rentvannsteknologi med ekstremt fokus på sikkerhet, og leverer feilfritt resultat uten unødvendige kostnader eller liftleie.
+          </p>
+        </div>
+
+        <!-- Links Column -->
+        <div class="md:col-span-3 space-y-4">
+          <h4 class="text-sm font-bold text-zinc-100 uppercase tracking-widest font-mono">Snarveier</h4>
+          <ul class="space-y-2 text-xs text-zinc-400">
+            <li><a href="#om-oss" class="hover:text-brand-orange transition-colors">Om oss & Erfaring</a></li>
+            <li><a href="#tjenester" class="hover:text-brand-orange transition-colors">Våre tjenester</a></li>
+            <li><a href="#fordeler" class="hover:text-brand-orange transition-colors">Sikkerhet & Fordeler</a></li>
+            <li><a href="#prosess" class="hover:text-brand-orange transition-colors">Hvordan vi jobber</a></li>
+            <li><a href="#prosjekter" class="hover:text-brand-orange transition-colors">Referanseprosjekter</a></li>
           </ul>
+        </div>
+
+        <!-- Approvals Column -->
+        <div class="md:col-span-5 space-y-4">
+          <h4 class="text-sm font-bold text-zinc-100 uppercase tracking-widest font-mono">Sertifisering & Trygghet</h4>
+          <p class="text-xs text-zinc-400 leading-relaxed">
+            Apex Cleaning er en fullt godkjent renholdsbedrift registrert i Arbeidstilsynets registre. Vi følger strenge nasjonale HMS-standarder og bærer alltid synlige ID-kort under oppdrag.
+          </p>
+          
+          <div class="flex flex-wrap gap-3 items-center pt-2">
+            <div class="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg flex items-center space-x-2">
+              <i data-lucide="shield" class="w-4 h-4 text-brand-orange"></i>
+              <span class="text-[10px] font-bold text-zinc-300 font-mono uppercase">Godkjent Bedrift</span>
+            </div>
+            <div class="bg-zinc-900 border border-zinc-800 px-3 py-1.5 rounded-lg flex items-center space-x-2">
+              <i data-lucide="file-check-2" class="w-4 h-4 text-brand-orange"></i>
+              <span class="text-[10px] font-bold text-zinc-300 font-mono uppercase">MVA Registrert</span>
+            </div>
+          </div>
         </div>
 
       </div>
 
-      <!-- Copyright & Bottom info -->
-      <div class="pt-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-550">
-        <p>&copy; 2026 Apex Cleaning. Alle rettigheter reservert.</p>
-        <div class="flex space-x-6 text-zinc-500">
-          <span>Org.nr: 933 664 365 MVA</span>
-          <span>Godkjent renholdsbedrift</span>
+      <!-- SEO Keywords list -->
+      <div class="border-t border-zinc-800 pt-8 mt-6">
+        <div class="space-y-3">
+          <div class="flex items-center space-x-2 text-zinc-400 text-xs">
+            <i data-lucide="navigation" class="w-4 h-4 text-brand-orange shrink-0"></i>
+            <span class="font-bold">Temaer & Lokalt søk (SEO):</span>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Vindusvask Oslo</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Fasadevask Oslo</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Vindusvask borettslag</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Vindusvask sameie</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Rentvannssystem Oslo</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Profesjonell vindusvask</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Rengjøring av glassbalkonger</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Renholdsbedrift Oslo</span>
+            <span class="text-[10px] px-2 py-1 bg-zinc-900/60 border border-zinc-800 text-zinc-450 rounded font-normal">#Periodisk vinduspuss næring</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright information -->
+      <div class="border-t border-zinc-800/80 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 gap-4">
+        <div class="space-y-1 text-center sm:text-left">
+          <p>© <span id="current-year"></span> Apex Cleaning AS. Alle rettigheter reservert.</p>
+          <p class="text-[10px] font-mono text-zinc-650">Org.nr: 994 857 603 MVA (Eksempel-registrering)</p>
+        </div>
+        <div class="flex space-x-4">
+          <a href="tel:45477027" class="hover:text-brand-orange transition-colors flex items-center space-x-1">
+            <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+            <span>454 77 027</span>
+          </a>
+          <a href="mailto:daniel.hojem@hotmail.no" class="hover:text-brand-orange transition-colors flex items-center space-x-1">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i>
+            <span>daniel.hojem@hotmail.no</span>
+          </a>
         </div>
       </div>
 
@@ -988,107 +995,93 @@
   </footer>
 
 
-  <!-- MOBILE FLOATING STICKY CTA AT BOTTOM (FOR TOUCH SCREENS) -->
-  <div class="md:hidden fixed bottom-4 inset-x-4 z-40 flex items-stretch gap-2">
-    <a href="tel:45477027" class="bg-zinc-950/95 backdrop-blur-md border border-zinc-800 text-white p-4 rounded-xl flex items-center justify-center transition-transform active:scale-95 shrink-0" aria-label="Telefon">
-      <i data-lucide="phone-call" class="w-5 h-5 text-brand-orange"></i>
+  <!-- RESPONSIVE MOBILE STICKY BOTTOM BUTTONS -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-brand-black/95 border-t border-zinc-800 p-2.5 flex items-center justify-between space-x-2 shadow-2xl block sm:hidden backdrop-blur-md">
+    <a href="tel:45477027" class="flex-1 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white font-bold py-3.5 px-2.5 rounded-lg flex items-center justify-center space-x-2 text-xs uppercase tracking-wide active:scale-95 transition-transform">
+      <i data-lucide="phone" class="w-4 h-4 text-brand-orange animate-pulse"></i>
+      <span>Ring oss</span>
     </a>
-    <a href="#kontakt" class="flex-grow bg-brand-orange hover:bg-brand-orange-light text-white font-extrabold text-xs sm:text-sm py-4 px-6 rounded-xl flex items-center justify-center space-x-2 transition-transform active:scale-95 shadow-lg uppercase tracking-wider">
-      <i data-lucide="calendar" class="w-4 h-4 text-white"></i>
-      <span>Be om gratis befaring</span>
+    <a href="mailto:daniel.hojem@hotmail.no" class="bg-zinc-900 border border-zinc-800 text-white p-3 rounded-lg active:scale-95 transition-transform" title="Send e-post">
+      <i data-lucide="mail" class="w-4 h-4 text-brand-orange"></i>
+    </a>
+    <a href="#kontakt" class="flex-1 bg-brand-orange hover:bg-brand-orange-light text-white font-extrabold py-3.5 px-2.5 rounded-lg flex items-center justify-center space-x-2 text-xs uppercase tracking-wider active:scale-95 transition-transform shadow-md">
+      <i data-lucide="file-text" class="w-4 h-4"></i>
+      <span>Få tilbud</span>
     </a>
   </div>
 
 
-  <!-- SCRIPTS LOGIC FOR THE STATIC PAGE -->
-  <!-- Lucide icons bundle -->
+  <!-- Lucide Icons CDN Loader & Interactive JavaScript -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    // Create icons on load
+    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Responsive Mobile Menu Drawer Logic
-    const toggleBtn = document.getElementById("mobile-menu-toggle");
-    const menuIcon = document.getElementById("menu-icon");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinks = document.querySelectorAll(".mobile-nav-link");
+    // Dynamically insert current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    let isMenuOpen = false;
+    // --- MOBILE DRAWER NAVIGATION MANAGER ---
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
 
-    function toggleMenu() {
-      isMenuOpen = !isMenuOpen;
-      if (isMenuOpen) {
-        mobileMenu.classList.remove("hidden");
-        menuIcon.setAttribute("data-lucide", "x");
+    mobileMenuToggle.addEventListener('click', () => {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      if (isHidden) {
+        mobileMenu.classList.remove('hidden');
+        menuIcon.setAttribute('data-lucide', 'x');
       } else {
-        mobileMenu.classList.add("hidden");
-        menuIcon.setAttribute("data-lucide", "menu");
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('data-lucide', 'menu');
       }
-      // Re-render the specific icon state
       lucide.createIcons();
-    }
+    });
 
-    toggleBtn.addEventListener("click", toggleMenu);
-    navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        if (isMenuOpen) toggleMenu();
+    // Close mobile menu when nav link is clicked
+    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIcon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
       });
     });
 
-    // Simple FAQ list accordion logic 
-    const faqItems = document.querySelectorAll(".faq-item");
-    faqItems.forEach((item, index) => {
-      const btn = item.querySelector(".faq-btn");
-      const content = item.querySelector(".faq-content");
-      const icon = item.querySelector(".faq-icon");
-
-      // Set first active by default
-      if (index === 0) {
-        content.classList.remove("hidden");
-        icon.classList.add("rotate-180");
-        icon.classList.add("text-brand-orange");
-      }
-
-      btn.addEventListener("click", () => {
-        const isCurrentlyOpen = !content.classList.contains("hidden");
+    // --- FAQ ACCORDION LOGIC ---
+    const faqButtons = document.querySelectorAll('.faq-btn');
+    
+    faqButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.closest('.faq-item');
+        const content = item.querySelector('.faq-content');
+        const chevron = item.querySelector('.faq-chevron');
+        const isOpen = !content.classList.contains('hidden');
         
-        // Close all first 
-        faqItems.forEach(otherItem => {
-          otherItem.querySelector(".faq-content").classList.add("hidden");
-          const otherIcon = otherItem.querySelector(".faq-icon");
-          otherIcon.classList.remove("rotate-180");
-          otherIcon.classList.remove("text-brand-orange");
+        // Close all other FAQs for a clean accordion effect
+        document.querySelectorAll('.faq-content').forEach(otherContent => {
+          otherContent.classList.add('hidden');
         });
-
-        // Toggle clicked
-        if (!isCurrentlyOpen) {
-          content.classList.remove("hidden");
-          icon.classList.add("rotate-180");
-          icon.classList.add("text-brand-orange");
-        }
-      });
-    });
-
-    // Smooth scroll offset logic for anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
+        document.querySelectorAll('.faq-chevron').forEach(otherChevron => {
+          otherChevron.classList.remove('rotate-180', 'text-brand-orange');
+        });
         
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          const navbarHeight = 80;
-          const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
-          
-          window.scrollTo({
-            top: targetPosition,
-            behavior: 'smooth'
-          });
+        // Toggle current FAQ
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          chevron.classList.add('rotate-180', 'text-brand-orange');
+        } else {
+          content.classList.add('hidden');
+          chevron.classList.remove('rotate-180', 'text-brand-orange');
         }
       });
     });
-  </script>
 
+    // Initial load: keep first FAQ active active
+    const firstFAQ = document.querySelector('.faq-item');
+    if (firstFAQ) {
+      firstFAQ.querySelector('.faq-content').classList.remove('hidden');
+      firstFAQ.querySelector('.faq-chevron').classList.add('rotate-180', 'text-brand-orange');
+    }
+  </script>
 </body>
 </html>
