@@ -661,138 +661,419 @@
     </section>
 
 
- {/* NEW CUSTOMER CASE / SUBSCRIPTION SECTION (KONSTABEL) */}
-        <section id="abonnementskunde" className="py-20 sm:py-24 bg-gradient-to-b from-white to-zinc-50 border-y border-zinc-150 relative overflow-hidden">
+<!-- NEW CUSTOMER CASE / SUBSCRIPTION SECTION (KONSTABEL) -->
+<section id="abonnementskunde" class="py-20 sm:py-24 bg-gradient-to-b from-white to-zinc-50 border-y border-zinc-150 relative overflow-hidden">
+  
+  <!-- Subtle warm orange decorative flare -->
+  <div class="absolute right-0 top-0 w-96 h-96 bg-brand-orange/5 rounded-full filter blur-3xl pointer-events-none -mr-48 -mt-24"></div>
+  <div class="absolute left-0 bottom-0 w-96 h-96 bg-zinc-100 rounded-full filter blur-3xl pointer-events-none -ml-48 -mb-24"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      
+      <!-- Text Side (Cols 1-6) -->
+      <div class="lg:col-span-6 space-y-6">
+        
+        <!-- Modern Capsule Badges -->
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="bg-brand-orange/15 text-brand-orange text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono">
+            ABONNEMENT AVTALE
+          </span>
+          <span class="bg-brand-black text-white text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono flex items-center">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 inline-block animate-pulse mr-2"></span>
+            <span>1 vask pr. måned</span>
+          </span>
+        </div>
+
+        <!-- Main Section Heading -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display leading-tight">
+          Konstabel – vår første abonnementskunde
+        </h2>
+        
+        <div class="h-1 w-20 bg-brand-orange rounded-full"></div>
+
+        <!-- Norwegian case description -->
+        <p class="text-zinc-650 leading-relaxed text-sm sm:text-base font-normal">
+          Vi er glade for å ønske Konstabel velkommen som Apex Cleanings første abonnementskunde. Gjennom en fast månedlig avtale kommer vi en gang i måneden for å vaske butikkfronten og showroomet, slik at lokalene alltid fremstår rene og innbydende for både kunder og ansatte. For oss handler et abonnement ikke bare om jevnlig vindusvask, men om å gjøre det enkelt å holde fasaden pen over tid – uten at man trenger å tenke på når neste vask bør bestilles.
+        </p>
+
+        <!-- Substantive Bedriftsabonnement CTA -->
+        <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+          <a 
+            href="#kontakt" 
+            onclick="selectKonstabelModell(event)"
+            class="bg-brand-black hover:bg-brand-orange text-white text-xs sm:text-sm font-extrabold px-6 py-4 rounded-xl text-center transition-all duration-300 uppercase tracking-wider flex items-center justify-center space-x-2 shrink-0"
+          >
+            <span>Få abonnementstilbud</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+          <p class="text-[11px] text-zinc-500 text-center sm:text-left leading-tight font-normal">
+            Tilpasset butikker, kjøpesentre, selskaper og sameier over hele Stor-Oslo.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Gallery Side (Cols 7-12) -->
+      <div class="lg:col-span-6 space-y-4">
+        
+        <!-- Main Focus Frame -->
+        <div 
+          onclick="openKonstabelLightbox()"
+          class="group relative rounded-2xl overflow-hidden shadow-xl aspect-video sm:aspect-[4/3] bg-zinc-150 border border-zinc-200 cursor-pointer"
+        >
+          <img 
+            id="konstabel-main-img"
+            src="konstabel-1.jpg"
+            data-fallback="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80"
+            onerror="handleImgFallback(this)"
+            alt="Konstabel butikkfront"
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
           
-          {/* Subtle warm orange decorative flare */}
-          <div className="absolute right-0 top-0 w-96 h-96 bg-brand-orange/5 rounded-full filter blur-3xl pointer-events-none -mr-48 -mt-24"></div>
-          <div className="absolute left-0 bottom-0 w-96 h-96 bg-zinc-100 rounded-full filter blur-3xl pointer-events-none -ml-48 -mb-24"></div>
-
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-              
-              {/* Text Side (Cols 1-6) */}
-              <div className="lg:col-span-6 space-y-6">
-                
-                {/* Modern Capsule Badges */}
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="bg-brand-orange/15 text-brand-orange text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono">
-                    ABONNEMENT AVTALE
-                  </span>
-                  <span className="bg-brand-black text-white text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono flex items-center space-x-1">
-                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 inline-block animate-pulse mr-1"></span>
-                    <span>1 vask pr. måned</span>
-                  </span>
-                </div>
-
-                {/* Main Section Heading */}
-                <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display leading-tight">
-                  Konstabel – vår første abonnementskunde
-                </h2>
-                
-                <div className="h-1 w-20 bg-brand-orange rounded-full"></div>
-
-                {/* Norwegian case text requested */}
-                <p className="text-zinc-650 leading-relaxed text-sm sm:text-base font-normal">
-                  Vi er glade for å ønske Konstabel velkommen som Apex Cleanings første abonnementskunde. Gjennom en fast månedlig avtale kommer vi en gang i måneden for å vaske butikkfronten og showroomet, slik at lokalene alltid fremstår rene og innbydende for både kunder og ansatte. For oss handler et abonnement ikke bare om jevnlig vindusvask, men om å gjøre det enkelt å holde fasaden pen over tid – uten at man trenger å tenke på når neste vask bør bestilles.
-                </p>
-
-                {/* Substantive Bedriftsabonnement CTA */}
-                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
-                  <a 
-                    href="#kontakt" 
-                    onClick={(e) => {
-                      handleScrollTo(e, 'kontakt');
-                      setFormData(prev => ({
-                        ...prev,
-                        serviceType: 'Bedriftsabonnement',
-                        message: 'Jeg ønsker uforpliktende befaring og pristilbud på månedlig butikk- og showroomabonnement efter Konstabel-modellen.'
-                      }));
-                    }}
-                    className="bg-brand-black hover:bg-brand-orange text-white text-xs sm:text-sm font-extrabold px-6 py-4 rounded-xl text-center transition-all duration-300 uppercase tracking-wider flex items-center justify-center space-x-2"
-                  >
-                    <span>Få abonnementilbud</span>
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <p className="text-[11px] text-zinc-500 text-center sm:text-left leading-tight font-normal">
-                    Tilpasset butikker, kjøpesentre, selskaper og sameier over hele Stor-Oslo.
-                  </p>
-                </div>
-
-              </div>
-
-              {/* Gallery Side (Cols 7-12) */}
-              <div className="lg:col-span-6 space-y-4">
-                
-                {/* Main Focus Frame */}
-                <div 
-                  onClick={() => setIsLightboxOpen(true)}
-                  className="group relative rounded-2xl overflow-hidden shadow-xl aspect-video sm:aspect-[4/3] bg-zinc-150 border border-zinc-200 cursor-pointer"
-                >
-                  <SafeImage 
-                    src={KONSTABEL_IMAGES[activeKonstabelImageIdx].src}
-                    fallbackUrl={KONSTABEL_IMAGES[activeKonstabelImageIdx].fallbackUrl}
-                    alt={KONSTABEL_IMAGES[activeKonstabelImageIdx].alt}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  
-                  {/* Glassmorphism photo indicator / caption hover overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 via-brand-black/0 to-transparent flex flex-col justify-end p-4 transition-opacity duration-300">
-                    <p className="text-white text-xs sm:text-sm font-semibold tracking-tight leading-tight truncate">
-                      {KONSTABEL_IMAGES[activeKonstabelImageIdx].alt}
-                    </p>
-                    <p className="text-brand-orange text-[10px] font-bold tracking-widest uppercase font-mono mt-0.5">
-                      Klikk for å forstørre bilde ( {activeKonstabelImageIdx + 1} / {KONSTABEL_IMAGES.length} )
-                    </p>
-                  </div>
-                  
-                  {/* Expand badge top right */}
-                  <div className="absolute top-4 right-4 bg-black/55 hover:bg-black/75 backdrop-blur-md p-2.5 rounded-xl text-white transition-opacity hidden sm:block">
-                    <ExternalLink className="w-4 h-4" />
-                  </div>
-                </div>
-
-                {/* Gallery Row Thumbnails */}
-                <div>
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-bold font-mono text-zinc-400 uppercase tracking-widest">
-                      BILDER FRA AVTALE
-                    </span>
-                    <span className="text-xs text-zinc-550 font-semibold font-mono">
-                      {activeKonstabelImageIdx + 1} av {KONSTABEL_IMAGES.length}
-                    </span>
-                  </div>
-
-                  {/* Responsive Row of Thumbnails */}
-                  <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
-                    {KONSTABEL_IMAGES.map((img, idx) => (
-                      <button 
-                        key={idx}
-                        type="button"
-                        onClick={() => setActiveKonstabelImageIdx(idx)}
-                        className={`relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all ${
-                          activeKonstabelImageIdx === idx 
-                          ? 'border-brand-orange scale-[1.02] shadow-sm' 
-                          : 'border-transparent hover:border-zinc-300 opacity-70 hover:opacity-100'
-                        }`}
-                      >
-                        <SafeImage 
-                          src={img.src}
-                          fallbackUrl={img.fallbackUrl}
-                          alt={img.alt}
-                          className="w-full h-full object-cover"
-                        />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
+          <!-- Caption Hover Overlay -->
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-black/85 via-brand-black/35 to-transparent flex flex-col justify-end p-5 transition-opacity duration-300">
+            <p id="konstabel-main-caption" class="text-white text-xs sm:text-sm font-semibold tracking-tight leading-tight truncate">
+              Konstabel butikkfront – Vindu vasket med rentvannsteknologi
+            </p>
+            <p class="text-brand-orange text-[10px] font-bold tracking-widest uppercase font-mono mt-1">
+              Klikk for å forstørre bilde ( <span id="konstabel-gallery-progress">1 av 6</span> )
+            </p>
           </div>
-        </section>
+          
+          <!-- Expand badge top right -->
+          <div class="absolute top-4 right-4 bg-black/55 hover:bg-black/75 backdrop-blur-sm p-2.5 rounded-xl text-white transition-opacity hidden sm:block">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </div>
+        </div>
 
+        <!-- Gallery Row Thumbnails -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold font-mono text-zinc-400 uppercase tracking-widest">
+              BILDER FRA AVTALE
+            </span>
+          </div>
+
+          <!-- Responsive Row of Thumbnails -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
+            
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-brand-orange scale-[1.02] shadow-sm"
+            >
+              <img src="konstabel-1.jpg" data-fallback="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 1" class="w-full h-full object-cover" />
+            </button>
+
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100"
+            >
+              <img src="konstabel-2.jpg" data-fallback="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 2" class="w-full h-full object-cover" />
+            </button>
+
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100"
+            >
+              <img src="konstabel-3.jpg" data-fallback="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 3" class="w-full h-full object-cover" />
+            </button>
+
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100"
+            >
+              <img src="konstabel-4.jpg" data-fallback="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 4" class="w-full h-full object-cover" />
+            </button>
+
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100"
+            >
+              <img src="konstabel-5.jpg" data-fallback="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 5" class="w-full h-full object-cover" />
+            </button>
+
+            <button 
+              type="button"
+              class="konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100"
+            >
+              <img src="konstabel-6.jpg" data-fallback="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=400&q=80" onerror="handleImgFallback(this)" alt="Miniatyr 6" class="w-full h-full object-cover" />
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE LIGHTBOX GALLERI DIALOG (MODAL) -->
+<div 
+  id="konstabel-lightbox" 
+  class="hidden fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex-col items-center justify-between p-4 sm:p-8"
+>
+  <!-- Top Bar Actions -->
+  <div class="w-full max-w-5xl flex items-center justify-between text-zinc-300 py-2">
+    <div class="flex items-center space-x-2">
+      <span class="bg-brand-orange text-white text-[10px] uppercase font-mono px-2 py-0.5 rounded font-extrabold">Kundecase</span>
+      <span class="text-xs font-semibold tracking-tight text-white font-sans">Konstabel Showroom</span>
+    </div>
+    <button 
+      type="button"
+      onclick="closeKonstabelLightbox()"
+      class="p-2 sm:p-3 rounded-full hover:bg-zinc-800/80 text-white hover:text-brand-orange transition-colors cursor-pointer"
+      aria-label="Lukk galleri"
+    >
+      <i data-lucide="x" class="w-6 h-6"></i>
+    </button>
+  </div>
+
+  <!-- Central Sliding Stage Area with Controls -->
+  <div class="w-full max-w-5xl flex-grow flex items-center justify-between gap-4 py-4 relative">
+    
+    <!-- Prev Arrow Button -->
+    <button 
+      type="button"
+      onclick="prevKonstabelImage(event)" 
+      class="hidden sm:flex bg-zinc-900/60 p-4 border border-zinc-850 rounded-full text-zinc-330 hover:text-brand-orange active:scale-95 transition-all outline-none cursor-pointer shrink-0 z-20"
+    >
+      <i data-lucide="chevron-left" class="w-6 h-6"></i>
+    </button>
+
+    <!-- Main Lightbox Image Viewport -->
+    <div class="relative max-h-[70vh] flex-grow flex items-center justify-center overflow-hidden rounded-2xl select-none z-10">
+      <img 
+        id="konstabel-lightbox-img" 
+        src="konstabel-1.jpg"
+        data-fallback="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=1200&q=85"
+        onerror="handleImgFallback(this)"
+        alt="Lightbox bilde" 
+        class="max-w-full max-h-[70vh] object-contain rounded-xl shadow-2xl"
+      />
+    </div>
+
+    <!-- Next Arrow Button -->
+    <button 
+      type="button"
+      onclick="nextKonstabelImage(event)"
+      class="hidden sm:flex bg-zinc-900/60 p-4 border border-zinc-850 rounded-full text-zinc-330 hover:text-brand-orange active:scale-95 transition-all outline-none cursor-pointer shrink-0 z-20"
+    >
+      <i data-lucide="chevron-right" class="w-6 h-6"></i>
+    </button>
+
+  </div>
+
+  <!-- Bottom Captions & Pagination info -->
+  <div class="w-full max-w-3xl text-center space-y-3 pb-4">
+    <p id="konstabel-lightbox-caption" class="text-zinc-200 text-xs sm:text-sm lg:text-base font-semibold leading-relaxed max-w-2xl mx-auto">
+      Konstabel butikkfront – Vindu vasket med rentvannsteknologi
+    </p>
+    
+    <div class="flex items-center justify-between sm:justify-center gap-6 text-zinc-400 text-xs font-semibold border-t border-zinc-800/80 pt-3 max-w-md mx-auto">
+      <button 
+        type="button" 
+        onclick="prevKonstabelImage(event)" 
+        class="sm:hidden text-zinc-300 active:text-brand-orange px-2 font-bold font-sans"
+      >
+        ‹ Bak
+      </button>
+      
+      <span class="font-mono text-zinc-300">Bilde <span id="konstabel-lightbox-progress">1 av 6</span></span>
+      
+      <button 
+        type="button" 
+        onclick="nextKonstabelImage(event)" 
+        class="sm:hidden text-zinc-300 active:text-brand-orange px-2 font-bold font-sans"
+      >
+        Neste ›
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SCRIPTS FOR INTERACTIVE STATIC GALLERY -->
+<script>
+  (function() {
+    // Array definition of paths and corresponding fallbacks
+    const images = [
+      {
+        src: 'konstabel-1.jpg',
+        fallback: 'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&w=800&q=80',
+        alt: 'Konstabel butikkfront – Vindu vasket med rentvannsteknologi'
+      },
+      {
+        src: 'konstabel-2.jpg',
+        fallback: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+        alt: 'Konstabel showroom og utstillingsområde utenfra'
+      },
+      {
+        src: 'konstabel-3.jpg',
+        fallback: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80',
+        alt: 'Inngangsparti og fasade vasket for et innbydende førsteinntrykk'
+      },
+      {
+        src: 'konstabel-4.jpg',
+        fallback: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80',
+        alt: 'Rent showroom-interiør som fremstår lyst og rent for ansatte og besøkende'
+      },
+      {
+        src: 'konstabel-5.jpg',
+        fallback: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80',
+        alt: 'Profesjonell vinduspuss av butikkfasade'
+      },
+      {
+        src: 'konstabel-6.jpg',
+        fallback: 'https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=800&q=80',
+        alt: 'Sømløs vindusvask og vedlikehold av glassflater over tid'
+      }
+    ];
+
+    let activeIdx = 0;
+
+    // Elements
+    const mainImg = document.getElementById('konstabel-main-img');
+    const mainCaption = document.getElementById('konstabel-main-caption');
+    const progressText = document.getElementById('konstabel-gallery-progress');
+    const lightbox = document.getElementById('konstabel-lightbox');
+    const lightboxImg = document.getElementById('konstabel-lightbox-img');
+    const lightboxCaption = document.getElementById('konstabel-lightbox-caption');
+    const lightboxProgress = document.getElementById('konstabel-lightbox-progress');
+    const thumbnails = document.querySelectorAll('.konstabel-thumb');
+
+    // Safe error handler for offline files
+    window.handleImgFallback = function(el) {
+      const fb = el.getAttribute('data-fallback');
+      if (fb && el.src !== fb) {
+        el.src = fb;
+      }
+    };
+
+    // Update main gallery display
+    function updateGallery() {
+      const img = images[activeIdx];
+      
+      // Update main frame with fallbacks
+      mainImg.src = img.src;
+      mainImg.alt = img.alt;
+      mainImg.setAttribute('data-fallback', img.fallback);
+      
+      mainCaption.textContent = img.alt;
+      progressText.textContent = `${activeIdx + 1} av ${images.length}`;
+
+      // Set highlights on active thumbnail button
+      thumbnails.forEach((thumb, idx) => {
+        if (idx === activeIdx) {
+          thumb.className = "konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-brand-orange scale-[1.02] shadow-sm";
+        } else {
+          thumb.className = "konstabel-thumb relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all border-transparent opacity-70 hover:opacity-100";
+        }
+      });
+    }
+
+    // Attach click events on thumbnails
+    thumbnails.forEach((thumb, idx) => {
+      thumb.addEventListener('click', () => {
+        activeIdx = idx;
+        updateGallery();
+      });
+    });
+
+    // Lightbox functions
+    window.openKonstabelLightbox = function() {
+      const img = images[activeIdx];
+      lightboxImg.src = img.src;
+      lightboxImg.setAttribute('data-fallback', img.fallback);
+      lightboxImg.alt = img.alt;
+      lightboxCaption.textContent = img.alt;
+      lightboxProgress.textContent = `${activeIdx + 1} av ${images.length}`;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+      
+      // Ensure icons are loaded inside the lightbox
+      if (window.lucide) {
+        window.lucide.createIcons();
+      }
+    };
+
+    window.closeKonstabelLightbox = function() {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+    };
+
+    window.nextKonstabelImage = function(e) {
+      if (e) e.stopPropagation();
+      activeIdx = (activeIdx + 1) % images.length;
+      updateGallery();
+      if (!lightbox.classList.contains('hidden')) {
+        openKonstabelLightbox();
+      }
+    };
+
+    window.prevKonstabelImage = function(e) {
+      if (e) e.stopPropagation();
+      activeIdx = (activeIdx - 1 + images.length) % images.length;
+      updateGallery();
+      if (!lightbox.classList.contains('hidden')) {
+        openKonstabelLightbox();
+      }
+    };
+
+    // Close on backdrop click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeKonstabelLightbox();
+      }
+    });
+
+    // Keyboard accessibility navigation
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'Escape') {
+        closeKonstabelLightbox();
+      } else if (e.key === 'ArrowRight') {
+        nextKonstabelImage();
+      } else if (e.key === 'ArrowLeft') {
+        prevKonstabelImage();
+      }
+    });
+
+    // Form selection helpers
+    window.selectKonstabelModell = function(e) {
+      // Smooth scroll to #kontakt
+      const target = document.querySelector('#kontakt');
+      if (target) {
+        e.preventDefault();
+        const navbarHeight = 80;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
+        window.scrollTo({
+          top: targetPosition,
+          behavior: 'smooth'
+        });
+      }
+
+      // Try finding the forms and filling them out
+      const selectEl = document.querySelector('[name="serviceType"]') || document.querySelector('#service-type') || document.querySelector('#serviceType');
+      if (selectEl) {
+        selectEl.value = 'Bedriftsabonnement';
+      }
+      
+      const messageEl = document.querySelector('[name="message"]') || document.querySelector('#message') || document.querySelector('#message-text');
+      if (messageEl) {
+        messageEl.value = 'Jeg ønsker uforpliktende befaring og pristilbud på månedlig butikk- og showroomabonnement etter Konstabel-modellen.';
+      }
+    };
+
+    // Run init
+    updateGallery();
+    
+    // Auto-create icons inside our block just in case
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  })();
+</script>
     <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
     <section id="kontakt" class="py-20 sm:py-24 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
