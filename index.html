@@ -661,82 +661,137 @@
     </section>
 
 
-    <!-- PROJECT REFERENCES SECTION -->
-    <section id="prosjekter" class="py-20 sm:py-24 bg-zinc-50 border-y border-zinc-150 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Headers -->
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <span class="text-sm font-bold font-mono text-zinc-400 uppercase tracking-widest block">ERFARING & BEVIS</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display">
-            Utvalgte utførte oppdrag
-          </h2>
-          <div class="h-1 w-20 bg-brand-orange mx-auto rounded-full"></div>
-          <p class="text-zinc-650 text-sm sm:text-base leading-relaxed">
-            Her vil du etter hvert kunne legge til egne utførte referanseprosjekter i Stor-Oslo. Våre eksempelkort her viser hvordan referansene dine kan presenteres profesjonelt.
-          </p>
-        </div>
-
-        <!-- Filter buttons structure -->
-        <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
-          <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-brand-orange text-white shadow-sm hover:translate-y-[-1px] transition-transform">Alle oppdrag</button>
-          <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-zinc-600 border border-zinc-200 hover:bg-zinc-100 transition-colors">Borettslag</button>
-          <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-zinc-600 border border-zinc-200 hover:bg-zinc-100 transition-colors">Sameier</button>
-          <button class="px-5 py-2 rounded-xl text-xs sm:text-sm font-bold bg-white text-zinc-600 border border-zinc-200 hover:bg-zinc-100 transition-colors">Næringsbygg</button>
-        </div>
-
-        <!-- Dynamic Empty References with elegant placeholders for the customer to fill out in future data.ts -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+ {/* NEW CUSTOMER CASE / SUBSCRIPTION SECTION (KONSTABEL) */}
+        <section id="abonnementskunde" className="py-20 sm:py-24 bg-gradient-to-b from-white to-zinc-50 border-y border-zinc-150 relative overflow-hidden">
           
-          <div class="border-2 border-dashed border-zinc-300 bg-white/70 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 text-zinc-500 min-h-[320px] shadow-sm hover:border-brand-orange/40 transition-colors duration-300">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="bg-zinc-150 text-zinc-550 text-[10px] font-bold py-1.5 px-2.5 rounded border border-zinc-200 uppercase tracking-wider">
-                  Borettslag / Sameie
-                </span>
-                <span class="text-[10px] font-bold font-mono text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">LEDIG PLASS</span>
+          {/* Subtle warm orange decorative flare */}
+          <div className="absolute right-0 top-0 w-96 h-96 bg-brand-orange/5 rounded-full filter blur-3xl pointer-events-none -mr-48 -mt-24"></div>
+          <div className="absolute left-0 bottom-0 w-96 h-96 bg-zinc-100 rounded-full filter blur-3xl pointer-events-none -ml-48 -mb-24"></div>
+
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              
+              {/* Text Side (Cols 1-6) */}
+              <div className="lg:col-span-6 space-y-6">
+                
+                {/* Modern Capsule Badges */}
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="bg-brand-orange/15 text-brand-orange text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono">
+                    ABONNEMENT AVTALE
+                  </span>
+                  <span className="bg-brand-black text-white text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono flex items-center space-x-1">
+                    <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 inline-block animate-pulse mr-1"></span>
+                    <span>1 vask pr. måned</span>
+                  </span>
+                </div>
+
+                {/* Main Section Heading */}
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display leading-tight">
+                  Konstabel – vår første abonnementskunde
+                </h2>
+                
+                <div className="h-1 w-20 bg-brand-orange rounded-full"></div>
+
+                {/* Norwegian case text requested */}
+                <p className="text-zinc-650 leading-relaxed text-sm sm:text-base font-normal">
+                  Vi er glade for å ønske Konstabel velkommen som Apex Cleanings første abonnementskunde. Gjennom en fast månedlig avtale kommer vi en gang i måneden for å vaske butikkfronten og showroomet, slik at lokalene alltid fremstår rene og innbydende for både kunder og ansatte. For oss handler et abonnement ikke bare om jevnlig vindusvask, men om å gjøre det enkelt å holde fasaden pen over tid – uten at man trenger å tenke på når neste vask bør bestilles.
+                </p>
+
+                {/* Substantive Bedriftsabonnement CTA */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+                  <a 
+                    href="#kontakt" 
+                    onClick={(e) => {
+                      handleScrollTo(e, 'kontakt');
+                      setFormData(prev => ({
+                        ...prev,
+                        serviceType: 'Bedriftsabonnement',
+                        message: 'Jeg ønsker uforpliktende befaring og pristilbud på månedlig butikk- og showroomabonnement efter Konstabel-modellen.'
+                      }));
+                    }}
+                    className="bg-brand-black hover:bg-brand-orange text-white text-xs sm:text-sm font-extrabold px-6 py-4 rounded-xl text-center transition-all duration-300 uppercase tracking-wider flex items-center justify-center space-x-2"
+                  >
+                    <span>Få abonnementilbud</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </a>
+                  <p className="text-[11px] text-zinc-500 text-center sm:text-left leading-tight font-normal">
+                    Tilpasset butikker, kjøpesentre, selskaper og sameier over hele Stor-Oslo.
+                  </p>
+                </div>
+
               </div>
-              <h3 class="text-lg sm:text-xl font-bold font-display text-zinc-700 tracking-tight">
-                Eksempel: Sannergata Borettslag
-              </h3>
-              <p class="text-zinc-550 text-xs sm:text-sm leading-relaxed">
-                Dette er en ledig plassholderstruktur for dine referanseprosjekter. Når du fyller ut listen <code class="bg-zinc-150 text-zinc-800 px-1.5 py-0.5 rounded text-xs font-mono border border-zinc-200">REFERENCES_DATA</code> i filen <code class="bg-zinc-150 text-zinc-800 px-1.5 py-0.5 rounded text-xs font-mono border border-zinc-200">src/data.ts</code>, vil dine ekte kort med egne bilder, tekster og tagger vises her automatisk.
-              </p>
-            </div>
-            <div class="border-t border-zinc-150 pt-4 flex flex-wrap items-center gap-1.5">
-              <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Vindusvask</span>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Rentvannsteknologi</span>
+
+              {/* Gallery Side (Cols 7-12) */}
+              <div className="lg:col-span-6 space-y-4">
+                
+                {/* Main Focus Frame */}
+                <div 
+                  onClick={() => setIsLightboxOpen(true)}
+                  className="group relative rounded-2xl overflow-hidden shadow-xl aspect-video sm:aspect-[4/3] bg-zinc-150 border border-zinc-200 cursor-pointer"
+                >
+                  <SafeImage 
+                    src={KONSTABEL_IMAGES[activeKonstabelImageIdx].src}
+                    fallbackUrl={KONSTABEL_IMAGES[activeKonstabelImageIdx].fallbackUrl}
+                    alt={KONSTABEL_IMAGES[activeKonstabelImageIdx].alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  
+                  {/* Glassmorphism photo indicator / caption hover overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 via-brand-black/0 to-transparent flex flex-col justify-end p-4 transition-opacity duration-300">
+                    <p className="text-white text-xs sm:text-sm font-semibold tracking-tight leading-tight truncate">
+                      {KONSTABEL_IMAGES[activeKonstabelImageIdx].alt}
+                    </p>
+                    <p className="text-brand-orange text-[10px] font-bold tracking-widest uppercase font-mono mt-0.5">
+                      Klikk for å forstørre bilde ( {activeKonstabelImageIdx + 1} / {KONSTABEL_IMAGES.length} )
+                    </p>
+                  </div>
+                  
+                  {/* Expand badge top right */}
+                  <div className="absolute top-4 right-4 bg-black/55 hover:bg-black/75 backdrop-blur-md p-2.5 rounded-xl text-white transition-opacity hidden sm:block">
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
+                </div>
+
+                {/* Gallery Row Thumbnails */}
+                <div>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs font-bold font-mono text-zinc-400 uppercase tracking-widest">
+                      BILDER FRA AVTALE
+                    </span>
+                    <span className="text-xs text-zinc-550 font-semibold font-mono">
+                      {activeKonstabelImageIdx + 1} av {KONSTABEL_IMAGES.length}
+                    </span>
+                  </div>
+
+                  {/* Responsive Row of Thumbnails */}
+                  <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-thin">
+                    {KONSTABEL_IMAGES.map((img, idx) => (
+                      <button 
+                        key={idx}
+                        type="button"
+                        onClick={() => setActiveKonstabelImageIdx(idx)}
+                        className={`relative h-14 sm:h-16 aspect-video rounded-lg overflow-hidden border-2 shrink-0 transition-all ${
+                          activeKonstabelImageIdx === idx 
+                          ? 'border-brand-orange scale-[1.02] shadow-sm' 
+                          : 'border-transparent hover:border-zinc-300 opacity-70 hover:opacity-100'
+                        }`}
+                      >
+                        <SafeImage 
+                          src={img.src}
+                          fallbackUrl={img.fallbackUrl}
+                          alt={img.alt}
+                          className="w-full h-full object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
+
             </div>
           </div>
-
-          <div class="border-2 border-dashed border-zinc-300 bg-white/70 rounded-2xl p-6 sm:p-8 flex flex-col justify-between space-y-6 text-zinc-500 min-h-[320px] shadow-sm hover:border-brand-orange/40 transition-colors duration-300">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <span class="bg-zinc-150 text-zinc-550 text-[10px] font-bold py-1.5 px-2.5 rounded border border-zinc-200 uppercase tracking-wider">
-                  Næringsbygg / Butikk
-                </span>
-                <span class="text-[10px] font-bold font-mono text-brand-orange bg-brand-orange/10 px-2.5 py-1 rounded">LEDIG PLASS</span>
-              </div>
-              <h3 class="text-lg sm:text-xl font-bold font-display text-zinc-700 tracking-tight">
-                Eksempel: Næringsbygg på Nydalen
-              </h3>
-              <p class="text-zinc-550 text-xs sm:text-sm leading-relaxed">
-                Du kan legge til så mange referanser du ønsker! Du kan fritt kategorisere dem etter dine egne behov. Bruk kategorier som <strong>Borettslag</strong>, <strong>Sameier</strong>, <strong>Butikklokaler</strong> eller <strong>Næringsbygg</strong> for å få filterknappene over to å fungere.
-              </p>
-            </div>
-            <div class="border-t border-zinc-150 pt-4 flex flex-wrap items-center gap-1.5">
-              <i data-lucide="tag" class="w-3.5 h-3.5 text-zinc-400 mr-1"></i>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Fasadevask</span>
-              <span class="bg-zinc-100 text-zinc-600 text-[10px] sm:text-xs font-semibold py-1 px-2.5 rounded-lg border border-zinc-200"># Rentvannssystem</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
+        </section>
 
     <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
     <section id="kontakt" class="py-20 sm:py-24 bg-white relative">
