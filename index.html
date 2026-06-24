@@ -1103,7 +1103,179 @@
     }
   })();
 </script>
-    <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
+ <!-- APEX MOVING GALLERY SECTION -->
+<style>
+  .apex-gallery-img {
+    height: 180px;
+    min-width: 260px;
+    width: 260px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 1px solid #e4e4e7;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  @media (min-width: 640px) {
+    .apex-gallery-img {
+      height: 210px;
+      min-width: 320px;
+      width: 320px;
+    }
+  }
+
+  .apex-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 9999px;
+    display: inline-block;
+  }
+</style>
+
+<section id="arbeidsgalleri" class="py-20 sm:py-24 bg-gradient-to-b from-white via-orange-50/40 to-white border-y border-zinc-150 overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+      <span class="inline-flex bg-brand-orange/10 text-brand-orange text-[11px] font-bold py-1.5 px-3 rounded-full uppercase tracking-wider font-mono">
+        Vi skaper rene og innbydende omgivelser
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-black tracking-tight font-display">
+        Se hva vi kan gjøre for din bedrift
+      </h2>
+
+      <div class="h-1 w-20 bg-brand-orange mx-auto rounded-full"></div>
+
+      <p class="text-zinc-650 text-sm sm:text-base leading-relaxed">
+        Vi leverer profesjonell vindus- og fasadevask, butikkvask og renhold tilpasset din hverdag.
+        Her er noen glimt fra oppdragene våre.
+      </p>
+    </div>
+
+    <div class="relative">
+      <button type="button" onclick="apexGalleryPrev()" class="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-5 z-10 bg-white shadow-lg border border-zinc-200 h-12 w-12 rounded-full items-center justify-center hover:text-brand-orange transition-all">
+        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+      </button>
+
+      <div class="overflow-hidden">
+        <div id="apex-moving-gallery" class="flex gap-5 transition-transform duration-500 ease-out">
+
+          <img src="konstabel-1.jpg" class="apex-gallery-img" alt="Konstabel butikkfront">
+          <img src="konstabel-2.jpg" class="apex-gallery-img" alt="Konstabel vindusvask">
+          <img src="konstabel-3.jpg" class="apex-gallery-img" alt="Butikkfront">
+          <img src="konstabel-4.jpg" class="apex-gallery-img" alt="Showroom">
+          <img src="konstabel-5.jpg" class="apex-gallery-img" alt="Vindusvask">
+          <img src="konstabel-6.jpg" class="apex-gallery-img" alt="Glassflater">
+
+          <img src="peludo1.jpeg" class="apex-gallery-img" alt="Peludo Dyrebutikk">
+          <img src="peludo2.jpeg" class="apex-gallery-img" alt="Peludo butikkfront">
+          <img src="peludo3.jpeg" class="apex-gallery-img" alt="Peludo vindusvask">
+          <img src="peludo5.jpeg" class="apex-gallery-img" alt="Peludo resultat">
+
+          <img src="sport spine.jpeg" class="apex-gallery-img" alt="Sport Spine">
+          <img src="sport spinen.jpeg" class="apex-gallery-img" alt="Sport Spine butikkfront">
+          <img src="sportspinen2.jpeg" class="apex-gallery-img" alt="Sport Spine vindu">
+
+          <img src="vålerenga pub.jpeg" class="apex-gallery-img" alt="Vålerenga Pub">
+          <img src="waterfeed.jpg" class="apex-gallery-img" alt="Rentvannssystem">
+
+        </div>
+      </div>
+
+      <button type="button" onclick="apexGalleryNext()" class="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-5 z-10 bg-white shadow-lg border border-zinc-200 h-12 w-12 rounded-full items-center justify-center hover:text-brand-orange transition-all">
+        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <div class="mt-8 flex justify-center gap-2">
+      <span class="apex-dot bg-brand-orange"></span>
+      <span class="apex-dot bg-zinc-300"></span>
+      <span class="apex-dot bg-zinc-300"></span>
+      <span class="apex-dot bg-zinc-300"></span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-14">
+      <div class="flex gap-4">
+        <div class="bg-brand-orange/10 text-brand-orange p-3 rounded-full h-fit">
+          <i data-lucide="sparkles" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-brand-black">Skinnende resultater</h3>
+          <p class="text-sm text-zinc-650 mt-1">Grundig renhold med øye for detaljer.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <div class="bg-brand-orange/10 text-brand-orange p-3 rounded-full h-fit">
+          <i data-lucide="calendar-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-brand-black">Faste avtaler</h3>
+          <p class="text-sm text-zinc-650 mt-1">Forutsigbare besøk til avtalt tid.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <div class="bg-brand-orange/10 text-brand-orange p-3 rounded-full h-fit">
+          <i data-lucide="user" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-brand-black">Fast kontaktperson</h3>
+          <p class="text-sm text-zinc-650 mt-1">Enkel oppfølging og god kommunikasjon.</p>
+        </div>
+      </div>
+
+      <div class="flex gap-4">
+        <div class="bg-brand-orange/10 text-brand-orange p-3 rounded-full h-fit">
+          <i data-lucide="shield-check" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h3 class="font-bold text-brand-black">Trygt og sikkert</h3>
+          <p class="text-sm text-zinc-650 mt-1">Ryddig, sikkert og profesjonelt arbeid.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  let apexGalleryIndex = 0;
+
+  function updateApexGallery() {
+    const gallery = document.getElementById('apex-moving-gallery');
+    if (!gallery) return;
+
+    const itemWidth = window.innerWidth < 640 ? 280 : 340;
+    gallery.style.transform = `translateX(-${apexGalleryIndex * itemWidth}px)`;
+  }
+
+  function apexGalleryNext() {
+    const gallery = document.getElementById('apex-moving-gallery');
+    if (!gallery) return;
+
+    const totalItems = gallery.children.length;
+    const visibleItems = window.innerWidth < 640 ? 1 : 4;
+    const maxIndex = Math.max(0, totalItems - visibleItems);
+
+    apexGalleryIndex = apexGalleryIndex >= maxIndex ? 0 : apexGalleryIndex + 1;
+    updateApexGallery();
+  }
+
+  function apexGalleryPrev() {
+    const gallery = document.getElementById('apex-moving-gallery');
+    if (!gallery) return;
+
+    const totalItems = gallery.children.length;
+    const visibleItems = window.innerWidth < 640 ? 1 : 4;
+    const maxIndex = Math.max(0, totalItems - visibleItems);
+
+    apexGalleryIndex = apexGalleryIndex <= 0 ? maxIndex : apexGalleryIndex - 1;
+    updateApexGallery();
+  }
+
+  setInterval(apexGalleryNext, 3500);
+  window.addEventListener('resize', updateApexGallery);
+</script>   <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
     <section id="kontakt" class="py-20 sm:py-24 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
