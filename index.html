@@ -1546,22 +1546,54 @@ onclick="openReferenceCase('konstabel-case')"
 
     </div>
 
-    <!-- GALLERI -->
-    <div class="mt-20">
-      <div class="flex items-center gap-3 mb-8">
-        <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
-        <h2 class="text-3xl font-extrabold font-display text-brand-black">
-          Bilder fra oppdraget
-        </h2>
-      </div>
+   <!-- GALLERI CAROUSEL -->
+<div class="mt-20">
+  <div class="flex items-center gap-3 mb-8">
+    <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+    <h2 class="text-3xl font-extrabold font-display text-brand-black">
+      Bilder fra oppdraget
+    </h2>
+  </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <img src="konstabel-1.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 1">
-        <img src="konstabel-2.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 2">
-        <img src="konstabel-3.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 3">
-      </div>
+  <div class="relative">
+    <button 
+      type="button"
+      onclick="konstabelGalleryPrev()"
+      class="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 bg-white shadow-xl border border-zinc-200 h-14 w-14 rounded-full items-center justify-center hover:text-brand-orange transition-all"
+      aria-label="Forrige bilde"
+    >
+      <span class="text-3xl leading-none">‹</span>
+    </button>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img id="konstabel-slide-1" src="konstabel-1.jpg" class="rounded-2xl shadow-lg w-full h-72 object-cover transition-all duration-300" alt="Konstabel bilde 1">
+      <img id="konstabel-slide-2" src="konstabel-2.jpg" class="rounded-2xl shadow-lg w-full h-72 object-cover transition-all duration-300" alt="Konstabel bilde 2">
+      <img id="konstabel-slide-3" src="konstabel-3.jpg" class="rounded-2xl shadow-lg w-full h-72 object-cover transition-all duration-300" alt="Konstabel bilde 3">
     </div>
 
+    <button 
+      type="button"
+      onclick="konstabelGalleryNext()"
+      class="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 z-10 bg-white shadow-xl border border-zinc-200 h-14 w-14 rounded-full items-center justify-center hover:text-brand-orange transition-all"
+      aria-label="Neste bilde"
+    >
+      <span class="text-3xl leading-none">›</span>
+    </button>
+  </div>
+
+  <div class="mt-8 flex items-center justify-center gap-3">
+    <button onclick="konstabelGalleryGoTo(0)" class="konstabel-dot h-3 w-3 rounded-full bg-brand-orange"></button>
+    <button onclick="konstabelGalleryGoTo(1)" class="konstabel-dot h-3 w-3 rounded-full bg-zinc-300"></button>
+    <button onclick="konstabelGalleryGoTo(2)" class="konstabel-dot h-3 w-3 rounded-full bg-zinc-300"></button>
+    <button onclick="konstabelGalleryGoTo(3)" class="konstabel-dot h-3 w-3 rounded-full bg-zinc-300"></button>
+    <button onclick="konstabelGalleryGoTo(4)" class="konstabel-dot h-3 w-3 rounded-full bg-zinc-300"></button>
+    <button onclick="konstabelGalleryGoTo(5)" class="konstabel-dot h-3 w-3 rounded-full bg-zinc-300"></button>
+
+    <span id="konstabel-gallery-count" class="ml-4 text-sm font-bold text-zinc-500">
+      1 / 6
+    </span>
+  </div>
+</div>
     <!-- CTA -->
     <div class="mt-20 bg-orange-50 border border-orange-100 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div>
@@ -1931,19 +1963,46 @@ onclick="openReferenceCase('konstabel-case')"
     });
   </script>
 <script>
-function openReferenceCase(sectionId) {
-    const section = document.getElementById(sectionId);
+<script>
+  const konstabelImages = [
+    "konstabel-1.jpg",
+    "konstabel-2.jpg",
+    "konstabel-3.jpg",
+    "konstabel-4.jpg",
+    "konstabel-5.jpg",
+    "konstabel-6.jpg"
+  ];
 
-    if (section) {
-        section.classList.remove("hidden");
+  let konstabelGalleryIndex = 0;
 
-        setTimeout(() => {
-            section.scrollIntoView({
-                behavior: "smooth",
-                block: "start"
-            });
-        }, 100);
-    }
+  function updateKonstabelGallery() {
+    const total = konstabelImages.length;
+
+    document.getElementById("konstabel-slide-1").src = konstabelImages[konstabelGalleryIndex % total];
+    document.getElementById("konstabel-slide-2").src = konstabelImages[(konstabelGalleryIndex + 1) % total];
+    document.getElementById("konstabel-slide-3").src = konstabelImages[(konstabelGalleryIndex + 2) % total];
+
+    document.getElementById("konstabel-gallery-count").textContent = `${konstabelGalleryIndex + 1} / ${total}`;
+
+    document.querySelectorAll(".konstabel-dot").forEach((dot, index) => {
+      dot.classList.toggle("bg-brand-orange", index === konstabelGalleryIndex);
+      dot.classList.toggle("bg-zinc-300", index !== konstabelGalleryIndex);
+    });
+  }
+
+  function konstabelGalleryNext() {
+    konstabelGalleryIndex = (konstabelGalleryIndex + 1) % konstabelImages.length;
+    updateKonstabelGallery();
+  }
+
+  function konstabelGalleryPrev() {
+    konstabelGalleryIndex = (konstabelGalleryIndex - 1 + konstabelImages.length) % konstabelImages.length;
+    updateKonstabelGallery();
+  }
+
+  function konstabelGalleryGoTo(index) {
+    konstabelGalleryIndex = index;
+    updateKonstabelGallery();
 }
 </script>
 </body>
