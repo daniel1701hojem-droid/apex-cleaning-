@@ -2004,6 +2004,22 @@ onclick="openReferenceCase('konstabel-case')"
     konstabelGalleryIndex = index;
     updateKonstabelGallery();
 }
+ function openReferenceCase(sectionId) {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+        section.classList.remove("hidden");
+
+        setTimeout(() => {
+            section.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 100);
+
+        updateKonstabelGallery();
+    }
+}
 </script>
 </body>
 </html>
