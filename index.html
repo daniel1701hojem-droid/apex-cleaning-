@@ -1390,119 +1390,196 @@ onclick="openReferenceCase('konstabel-case')"
 
         <!-- KONSTABEL CASE SIDE -->
 <section id="konstabel-case" class="hidden bg-white">
-    <div class="relative bg-brand-black text-white overflow-hidden">   
-      <div class="absolute inset-0">
-      <img src="konstabel-3.jpg" alt="Konstabel interiørbutikk" class="w-full h-full object-cover opacity-45">
-      <div class="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-black/30"></div>
-    </div>
 
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32">
-      <span class="text-brand-orange text-xs font-bold uppercase tracking-widest font-mono">
-        Referanseprosjekt
-      </span>
+  <!-- HERO -->
+  <div class="relative min-h-[520px] bg-brand-black text-white overflow-hidden">
+    <img 
+      src="konstabel-3.jpg" 
+      alt="Konstabel butikkfront"
+      class="absolute inset-0 w-full h-full object-cover opacity-75"
+    >
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10"></div>
 
-      <h2 class="text-4xl sm:text-5xl font-extrabold font-display mt-4">
-        Konstabel
-      </h2>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
+      <div class="max-w-2xl">
+        <p class="text-brand-orange text-xs font-bold uppercase tracking-widest font-mono mb-4">
+          Referanseprosjekt
+        </p>
 
-      <p class="text-xl sm:text-2xl text-zinc-200 mt-4 max-w-2xl">
-        Månedlig vindusvask av butikkfront og showroom
-      </p>
+        <h1 class="text-5xl sm:text-6xl font-extrabold font-display tracking-tight">
+          Konstabel
+        </h1>
 
-      <div class="mt-6 inline-flex items-center gap-2 bg-brand-orange/15 border border-brand-orange/30 text-brand-orange px-4 py-2 rounded-full text-sm font-bold">
-        <i data-lucide="calendar-check" class="w-4 h-4"></i>
-        Fast abonnement siden 2026
+        <p class="mt-5 text-2xl text-zinc-100 leading-snug">
+          Månedlig vindusvask av butikkfront og showroom
+        </p>
+
+        <div class="mt-8 inline-flex items-center gap-2 bg-brand-orange/15 border border-brand-orange/40 text-brand-orange px-5 py-3 rounded-full text-sm font-bold">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i>
+          Fast abonnement siden 2026
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- CONTENT -->
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+      
+      <!-- OM KUNDEN -->
       <div>
-        <h3 class="text-2xl font-bold text-brand-black font-display mb-4">Om kunden</h3>
-        <p class="text-zinc-650 leading-relaxed">
-          Konstabel er en interiørbutikk i Oslo som ønsket en fast løsning for å holde butikkfront og showroom rene gjennom året. Rene vinduer gir et bedre førsteinntrykk og lar interiøret komme tydelig frem for kunder og forbipasserende.
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Om kunden
+          </h2>
+        </div>
+
+        <p class="text-zinc-650 leading-relaxed text-base">
+          Konstabel er en interiørbutikk i Oslo som ønsket en fast løsning for å holde
+          butikkfront og showroom rene gjennom året. Rene vinduer gir et bedre
+          førsteinntrykk og lar interiøret komme tydelig frem for kunder og forbipasserende.
         </p>
-        <p class="text-zinc-650 leading-relaxed mt-4">
-          Apex Cleaning etablerte en månedlig vedlikeholdsavtale med utvendig vindusvask og innvendig vask ved behov.
+
+        <p class="text-zinc-650 leading-relaxed text-base mt-5">
+          Apex Cleaning etablerte en månedlig vedlikeholdsavtale med utvendig vindusvask
+          og innvendig vask ved behov.
         </p>
       </div>
 
-      <div class="bg-zinc-50 border border-zinc-200 rounded-2xl p-6 sm:p-8">
-        <h3 class="text-2xl font-bold text-brand-black font-display mb-6">Prosjektinformasjon</h3>
-        <div class="space-y-4 text-sm">
-          <div class="flex justify-between border-b border-zinc-200 pb-3">
-            <span class="font-semibold text-zinc-500">Kunde</span>
+      <!-- PROSJEKTINFO -->
+      <div class="bg-white rounded-3xl border border-zinc-200 shadow-xl p-8">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="bg-brand-orange/10 text-brand-orange p-4 rounded-2xl">
+            <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Prosjektinformasjon
+          </h2>
+        </div>
+
+        <div class="divide-y divide-zinc-200 text-sm">
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Kunde</span>
             <span class="font-bold text-brand-black">Konstabel</span>
           </div>
-          <div class="flex justify-between border-b border-zinc-200 pb-3">
-            <span class="font-semibold text-zinc-500">Type</span>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Type</span>
             <span class="font-bold text-brand-black">Interiørbutikk</span>
           </div>
-          <div class="flex justify-between border-b border-zinc-200 pb-3">
-            <span class="font-semibold text-zinc-500">Tjeneste</span>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Tjeneste</span>
             <span class="font-bold text-brand-black">Vindusvask</span>
           </div>
-          <div class="flex justify-between border-b border-zinc-200 pb-3">
-            <span class="font-semibold text-zinc-500">Frekvens</span>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Frekvens</span>
             <span class="font-bold text-brand-black">Månedlig</span>
           </div>
-          <div class="flex justify-between">
-            <span class="font-semibold text-zinc-500">Status</span>
-            <span class="font-bold text-brand-orange">Aktiv abonnementskunde</span>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Status</span>
+            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">
+              Fast abonnement
+            </span>
           </div>
         </div>
       </div>
+
     </div>
 
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+    <!-- HVA VI GJORDE / RESULTAT -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-20">
+
       <div>
-        <h3 class="text-2xl font-bold text-brand-black font-display mb-5">Hva vi utførte</h3>
-        <ul class="space-y-3 text-zinc-650">
-          <li>✔ Utvendig vindusvask</li>
-          <li>✔ Vask av butikkfront</li>
-          <li>✔ Vask av showroom-vinduer</li>
-          <li>✔ Innvendig vask ved behov</li>
-          <li>✔ Månedlig vedlikehold</li>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Hva vi utførte
+          </h2>
+        </div>
+
+        <ul class="space-y-4 text-zinc-700">
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Utvendig vindusvask
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Vask av butikkfront
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Vask av showroom-vinduer
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Innvendig vask ved behov
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Månedlig vedlikehold
+          </li>
         </ul>
       </div>
 
       <div>
-        <h3 class="text-2xl font-bold text-brand-black font-display mb-5">Resultatet</h3>
-        <p class="text-zinc-650 leading-relaxed">
-          Butikkfronten holdes jevnlig ren gjennom en fast vedlikeholdsavtale. Dette gir et mer profesjonelt førsteinntrykk og gjør at lokalet fremstår ryddig, lyst og innbydende gjennom året.
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Resultatet
+          </h2>
+        </div>
+
+        <p class="text-zinc-650 leading-relaxed text-base">
+          Butikkfronten holdes jevnlig ren gjennom en fast vedlikeholdsavtale. Dette gir
+          et mer profesjonelt førsteinntrykk og gjør at lokalet fremstår ryddig, lyst og
+          innbydende gjennom året.
         </p>
+
+        <div class="mt-8 bg-orange-50 border border-orange-100 rounded-2xl p-6 flex gap-4">
+          <div class="text-brand-orange text-3xl">☆</div>
+          <div>
+            <h3 class="font-extrabold text-brand-black">
+              Et renere uttrykk. Hver eneste måned.
+            </h3>
+            <p class="text-sm text-zinc-650 mt-2">
+              Konstabel får en innbydende og representativ butikkfront som reflekterer kvaliteten i butikken.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GALLERI -->
+    <div class="mt-20">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+        <h2 class="text-3xl font-extrabold font-display text-brand-black">
+          Bilder fra oppdraget
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="konstabel-1.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 1">
+        <img src="konstabel-2.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 2">
+        <img src="konstabel-3.jpg" class="rounded-2xl shadow-lg w-full h-64 object-cover" alt="Konstabel bilde 3">
       </div>
     </div>
 
-    <div>
-      <h3 class="text-2xl font-bold text-brand-black font-display mb-6">Bilder fra oppdraget</h3>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <img src="konstabel-1.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 1">
-        <img src="konstabel-2.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 2">
-        <img src="konstabel-3.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 3">
-        <img src="konstabel-4.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 4">
-        <img src="konstabel-5.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 5">
-        <img src="konstabel-6.jpg" class="rounded-2xl shadow-md w-full h-64 object-cover" alt="Konstabel bilde 6">
-      </div>
-    </div>
-
-    <div class="mt-16 bg-zinc-50 border border-zinc-200 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+    <!-- CTA -->
+    <div class="mt-20 bg-orange-50 border border-orange-100 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
       <div>
-        <h3 class="text-2xl font-bold text-brand-black font-display">Ønsker du samme løsning?</h3>
-        <p class="text-zinc-650 mt-2 text-sm">
-          Vi tilbyr faste vedlikeholdsavtaler for butikker, klinikker, treningssentre og næringsbygg.
+        <h2 class="text-2xl font-extrabold font-display text-brand-black">
+          Vil du ha en like ren og innbydende butikkfront?
+        </h2>
+        <p class="text-zinc-650 mt-2">
+          Vi skreddersyr vedlikeholdsløsninger som passer din bedrift.
         </p>
       </div>
 
-      <a href="#kontakt" class="bg-brand-orange hover:bg-brand-orange-light text-white font-bold px-6 py-4 rounded-xl uppercase tracking-wider text-sm">
-        Få gratis befaring
+      <a href="#kontakt" class="bg-brand-orange hover:bg-brand-orange-light text-white font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition-all">
+        Få gratis befaring →
       </a>
     </div>
+
   </div>
 </section>
-
 <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
     <section id="kontakt" class="py-20 sm:py-24 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
