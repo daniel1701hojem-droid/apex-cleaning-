@@ -727,6 +727,7 @@
             onerror="handleImgFallback(this)"
             alt="Konstabel butikkfront"
             class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          >
       <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brand-black/85 via-brand-black/35 to-transparent p-5">
   <p id="konstabel-main-caption" class="text-white text-xs sm:text-sm font-semibold tracking-tight leading-snug">
     Konstabel butikkfront – Vindu vasket med rentvannsteknologi
@@ -883,7 +884,6 @@
   <!-- Bottom Captions & Pagination info -->
   <div class="w-full max-w-3xl text-center space-y-3 pb-4">
 <p id="konstabel-lightbox-caption" class="hidden"></p>
-</p>
       <button 
         type="button" 
         onclick="prevKonstabelImage(event)" 
@@ -1963,7 +1963,6 @@ onclick="openReferenceCase('konstabel-case')"
     });
   </script>
 <script>
-<script>
   const konstabelImages = [
     "konstabel-1.jpg",
     "konstabel-2.jpg",
@@ -1977,12 +1976,18 @@ onclick="openReferenceCase('konstabel-case')"
 
   function updateKonstabelGallery() {
     const total = konstabelImages.length;
+    const slide1 = document.getElementById("konstabel-slide-1");
+    const slide2 = document.getElementById("konstabel-slide-2");
+    const slide3 = document.getElementById("konstabel-slide-3");
+    const count = document.getElementById("konstabel-gallery-count");
 
-    document.getElementById("konstabel-slide-1").src = konstabelImages[konstabelGalleryIndex % total];
-    document.getElementById("konstabel-slide-2").src = konstabelImages[(konstabelGalleryIndex + 1) % total];
-    document.getElementById("konstabel-slide-3").src = konstabelImages[(konstabelGalleryIndex + 2) % total];
+    if (!slide1 || !slide2 || !slide3 || !count) return;
 
-    document.getElementById("konstabel-gallery-count").textContent = `${konstabelGalleryIndex + 1} / ${total}`;
+    slide1.src = konstabelImages[konstabelGalleryIndex % total];
+    slide2.src = konstabelImages[(konstabelGalleryIndex + 1) % total];
+    slide3.src = konstabelImages[(konstabelGalleryIndex + 2) % total];
+
+    count.textContent = `${konstabelGalleryIndex + 1} / ${total}`;
 
     document.querySelectorAll(".konstabel-dot").forEach((dot, index) => {
       dot.classList.toggle("bg-brand-orange", index === konstabelGalleryIndex);
