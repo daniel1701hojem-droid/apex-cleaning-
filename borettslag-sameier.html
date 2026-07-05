@@ -1,145 +1,258 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Vindusvask for borettslag og sameier | Apex Cleaning</title>
+  <title>Vindusvask for borettslag og sameier | Apex Cleaning</title>
+  <meta name="description" content="Profesjonell vindusvask for borettslag og sameier i Oslo. Rentvannssystem, god planlegging og faste vedlikeholdsavtaler." />
 
-<meta name="description" content="Profesjonell vindusvask for borettslag og sameier i Oslo. Fast vedlikehold, rentvannssystem og kostnadseffektive løsninger uten unødvendig liftbruk.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apex: {
+              orange: '#ff7a1a',
+              dark: '#070707',
+              soft: '#f5f5f3'
+            }
+          }
+        }
+      }
+    }
+  </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<style>
-body{
-font-family:Inter,sans-serif;
-}
-</style>
-
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#070707; }
+  </style>
 </head>
 
-<body class="bg-white text-zinc-800">
+<body class="text-white font-sans">
 
-<!-- HERO -->
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-apex-orange text-black font-black px-3 py-2 rounded-md text-xs tracking-widest">APEX</div>
+        <span class="text-xl font-bold">Cleaning.</span>
+      </a>
 
-<section class="relative h-[550px]">
+      <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-300">
+        <a href="index.html#om-oss" class="hover:text-apex-orange">Om oss</a>
+        <a href="index.html#tjenester" class="hover:text-apex-orange">Tjenester</a>
+        <a href="index.html#sikkerhet" class="hover:text-apex-orange">Sikkerhet</a>
+        <a href="index.html#prosjekter" class="hover:text-apex-orange">Referanser</a>
+      </nav>
 
-<img src="høyebyginger.jpg"
-class="absolute inset-0 w-full h-full object-cover">
+      <a href="#kontakt" class="hidden sm:inline-flex bg-apex-orange text-black font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-400 transition">
+        Få gratis befaring
+      </a>
+    </div>
+  </header>
 
-<div class="absolute inset-0 bg-black/65"></div>
+  <!-- HERO -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-black via-zinc-950 to-zinc-900">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-apex-orange text-xs font-bold uppercase tracking-[0.25em] mb-5">
+          Tjenester / Borettslag og sameier
+        </p>
 
-<div class="relative max-w-6xl mx-auto h-full flex items-center px-6">
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+          Vindusvask for <span class="text-apex-orange">borettslag og sameier</span>
+        </h1>
 
-<div class="max-w-3xl">
+        <p class="text-lg text-zinc-300 leading-relaxed max-w-xl mb-8">
+          Vi hjelper styrer i Oslo og omegn med effektiv, trygg og skånsom utvendig vindusvask.
+          Med rentvannssystem og god planlegging holder vi fasadene rene – enkelt og forutsigbart.
+        </p>
 
-<p class="uppercase tracking-[4px] text-orange-400 font-bold text-sm">
-Borettslag & Sameier
-</p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#kontakt" class="bg-apex-orange text-black font-bold px-7 py-4 rounded-xl text-center hover:bg-orange-400 transition">
+            Be om gratis befaring
+          </a>
+          <a href="index.html#tjenester" class="border border-white/20 px-7 py-4 rounded-xl text-center font-bold hover:border-apex-orange hover:text-apex-orange transition">
+            Se alle tjenester
+          </a>
+        </div>
+      </div>
 
-<h1 class="text-5xl font-extrabold text-white mt-4 leading-tight">
+      <div class="relative">
+        <div class="absolute -inset-4 bg-apex-orange/20 blur-3xl rounded-full"></div>
+        <img 
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+          alt="Borettslag med balkonger og grøntområde"
+          class="relative rounded-3xl shadow-2xl border border-white/10 w-full h-[480px] object-cover"
+        />
+      </div>
+    </div>
+  </section>
 
-Profesjonell vindusvask
-for borettslag
-og sameier
+  <!-- FORDELER -->
+  <section class="bg-apex-soft text-black py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl mb-14">
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Hvorfor velge Apex Cleaning
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          Planlagt vindusvask uten unødvendig komplisering
+        </h2>
+        <p class="text-zinc-600 text-lg">
+          Vi legger opp arbeidet slik at det blir enkelt for styret, trygt for beboerne og forutsigbart økonomisk.
+        </p>
+      </div>
 
-</h1>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="droplets" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-xl font-black mb-3">Rentvannssystem</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            Vi vasker med renset vann og teleskopstang der det er mulig. Dette gir effektiv vask uten kjemikalier.
+          </p>
+        </div>
 
-<p class="text-zinc-200 text-lg mt-8 leading-relaxed">
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="shield-check" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-xl font-black mb-3">Trygg gjennomføring</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            Vi planlegger rundt innganger, gangsoner og beboertrafikk slik at arbeidet utføres ryddig og sikkert.
+          </p>
+        </div>
 
-Vi hjelper borettslag og sameier i Oslo med
-utvendig vindusvask, glassfasader og
-periodisk vedlikehold. Med moderne rentvannssystem
-kan vi utføre store deler av arbeidet fra bakken,
-uten kostbar lift og med minimale forstyrrelser
-for beboerne.
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="calendar-check" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-xl font-black mb-3">Fast vedlikehold</h3>
+          <p class="text-zinc-600 leading-relaxed">
+            Borettslag kan få faste vasker gjennom året, slik at fasaden holder et godt og rent uttrykk.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</p>
+  <!-- PROSESS -->
+  <section class="bg-black py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl mb-14">
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Slik jobber vi
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          En enkel prosess for styret
+        </h2>
+      </div>
 
-<div class="mt-10 flex gap-4">
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="border border-white/10 rounded-3xl p-7 bg-white/5">
+          <span class="text-apex-orange font-black text-3xl">01</span>
+          <h3 class="font-black text-xl mt-6 mb-3">Befaring</h3>
+          <p class="text-zinc-400">Vi ser på fasade, høyde, adkomst og vindustyper.</p>
+        </div>
 
-<a href="#kontakt"
-class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-bold">
+        <div class="border border-white/10 rounded-3xl p-7 bg-white/5">
+          <span class="text-apex-orange font-black text-3xl">02</span>
+          <h3 class="font-black text-xl mt-6 mb-3">Tilbud</h3>
+          <p class="text-zinc-400">Styret får et ryddig og uforpliktende pristilbud.</p>
+        </div>
 
-Få gratis befaring
+        <div class="border border-white/10 rounded-3xl p-7 bg-white/5">
+          <span class="text-apex-orange font-black text-3xl">03</span>
+          <h3 class="font-black text-xl mt-6 mb-3">Planlegging</h3>
+          <p class="text-zinc-400">Vi avtaler tidspunkt, varsling og praktisk gjennomføring.</p>
+        </div>
 
-</a>
+        <div class="border border-white/10 rounded-3xl p-7 bg-white/5">
+          <span class="text-apex-orange font-black text-3xl">04</span>
+          <h3 class="font-black text-xl mt-6 mb-3">Utførelse</h3>
+          <p class="text-zinc-400">Vasken gjennomføres trygt, effektivt og med god kommunikasjon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<a href="index.html"
-class="border border-white text-white px-8 py-4 rounded-xl font-bold">
+  <!-- INTERVALLER -->
+  <section class="bg-apex-soft text-black py-24">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-start">
+      <div>
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Vedlikeholdsplan
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          Hvor ofte bør borettslag vaske vinduene?
+        </h2>
+        <p class="text-zinc-600 text-lg leading-relaxed">
+          Riktig intervall avhenger av beliggenhet, trafikk, værforhold og hvor rent uttrykk styret ønsker at bygget skal ha.
+        </p>
+      </div>
 
-Tilbake
+      <div class="bg-white rounded-3xl p-8 shadow-sm border border-black/5">
+        <div class="space-y-5">
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Langs trafikkert vei</span>
+            <span class="text-apex-orange font-black">Hver 2. måned</span>
+          </div>
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Vanlige borettslag</span>
+            <span class="text-apex-orange font-black">2–3 ganger i året</span>
+          </div>
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Sameier</span>
+            <span class="text-apex-orange font-black">Etter behov</span>
+          </div>
+          <div class="flex justify-between gap-6">
+            <span class="font-bold">Inngangspartier/glassfelt</span>
+            <span class="text-apex-orange font-black">Oftere ved behov</span>
+          </div>
+        </div>
 
-</a>
+        <p class="text-sm text-zinc-500 mt-8 leading-relaxed">
+          Dette er kun generelle anbefalinger. Borettslag nær trafikkerte veier kan få mer trafikkfilm og støv på vinduene, og kan derfor ha behov for hyppigere vask.
+        </p>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- CTA -->
+  <section id="kontakt" class="bg-gradient-to-br from-zinc-950 to-black py-24">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+      <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+        Gratis befaring
+      </p>
+      <h2 class="text-4xl md:text-6xl font-black mb-6">
+        Ønsker styret et uforpliktende tilbud?
+      </h2>
+      <p class="text-zinc-400 text-lg max-w-2xl mx-auto mb-9">
+        Send oss en kort henvendelse, så kan vi vurdere bygget og komme med et ryddig forslag til vindusvask for borettslaget.
+      </p>
 
-</div>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:post@apexcleaning.no" class="bg-apex-orange text-black font-black px-8 py-4 rounded-xl hover:bg-orange-400 transition">
+          Send e-post
+        </a>
+        <a href="tel:45477027" class="border border-white/20 px-8 py-4 rounded-xl font-black hover:border-apex-orange hover:text-apex-orange transition">
+          Ring 454 77 027
+        </a>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6 text-sm text-zinc-500">
+      <p>© 2026 Apex Cleaning</p>
+      <p>Vindus- og fasadevask i Oslo og omegn</p>
+    </div>
+  </footer>
 
-</section>
-
-<!-- INTRO -->
-
-<section class="py-24">
-
-<div class="max-w-6xl mx-auto px-6">
-
-<div class="grid lg:grid-cols-2 gap-16">
-
-<div>
-
-<h2 class="text-4xl font-bold mb-6">
-
-Skreddersydd for styret
-
-</h2>
-
-<p class="text-lg leading-8 text-zinc-600">
-
-Vi samarbeider tett med styret og tilpasser
-arbeidet etter borettslagets behov.
-Vi kan utføre både enkeltoppdrag og faste
-vedlikeholdsavtaler gjennom året.
-
-</p>
-
-</div>
-
-<div class="bg-zinc-100 rounded-2xl p-10">
-
-<h3 class="text-2xl font-bold mb-6">
-
-Dette kan vi hjelpe med
-
-</h3>
-
-<ul class="space-y-4 text-lg">
-
-<li>✔ Utvendig vindusvask</li>
-
-<li>✔ Glassrekkverk</li>
-
-<li>✔ Glassfasader</li>
-
-<li>✔ Inngangspartier</li>
-
-<li>✔ Svalganger</li>
-
-<li>✔ Faste vedlikeholdsavtaler</li>
-
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
+  <script>
+    lucide.createIcons();
+  </script>
 
 </body>
 </html>
