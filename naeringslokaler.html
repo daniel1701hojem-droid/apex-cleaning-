@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Vindusvask for næringslokaler i Oslo | Apex Cleaning</title>
+  <meta name="description" content="Fast utvendig og innvendig vindusvask for butikker, klinikker, kontorer, restauranter og andre næringslokaler i Oslo. Få abonnementstilbud fra Apex Cleaning." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            apex: {
+              orange: '#ff5a00',
+              dark: '#0f0f11',
+              soft: '#f7f7f5'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#0f0f11; }
+  </style>
+</head>
+
+<body class="text-white font-sans">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur border-b border-black/10 text-black">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-apex-orange text-white font-black px-3 py-2 rounded-lg text-xs tracking-widest">APEX</div>
+        <span class="text-xl font-bold">Cleaning<span class="text-apex-orange">.</span></span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-700 font-semibold">
+        <a href="index.html#om-oss">Om oss</a>
+        <a href="index.html#tjenester">Tjenester</a>
+        <a href="index.html#fordeler">Sikkerhet</a>
+        <a href="index.html#prosjekter">Referanser</a>
+      </nav>
+
+      <a href="#kontakt" class="hidden sm:inline-flex bg-apex-orange text-white font-bold px-5 py-3 rounded-xl text-sm hover:bg-orange-600 transition">
+        Få abonnementstilbud
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 bg-gradient-to-br from-apex-dark via-zinc-950 to-black">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-apex-orange text-xs font-bold uppercase tracking-[0.25em] mb-5">
+          Vindusvask / Næringslokaler
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-6">
+          Vindusvask for <span class="text-apex-orange">næringslokaler</span> i Oslo
+        </h1>
+
+        <p class="text-lg text-zinc-300 leading-relaxed max-w-xl mb-8">
+          Gi kundene et godt førsteinntrykk – hele året. Apex Cleaning tilbyr faste avtaler for utvendig og innvendig vindusvask av butikker, klinikker, kontorer, restauranter og andre næringslokaler.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#kontakt" class="bg-apex-orange text-white font-bold px-7 py-4 rounded-xl text-center hover:bg-orange-600 transition">
+            Få abonnementstilbud
+          </a>
+          <a href="#referanser" class="border border-white/20 px-7 py-4 rounded-xl text-center font-bold hover:border-apex-orange hover:text-apex-orange transition">
+            Se referanser
+          </a>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-4 bg-apex-orange/20 blur-3xl rounded-full"></div>
+        <img 
+          src="konstabel-1.jpg"
+          alt="Vindusvask for næringslokaler"
+          class="relative rounded-3xl shadow-2xl border border-white/10 w-full h-[480px] object-cover"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- FORDELER -->
+  <section class="bg-apex-soft text-black py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl mb-14">
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Fast vedlikehold
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          Slipp å huske neste vask
+        </h2>
+        <p class="text-zinc-600 text-lg leading-relaxed">
+          Med en fast avtale følger vi opp vasken for dere. Vi tilpasser intervallet etter behov og varsler alltid før neste planlagte vask.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="calendar-check" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-lg font-black mb-3">Fast intervall</h3>
+          <p class="text-zinc-600 text-sm leading-relaxed">Månedlig, annenhver måned eller etter behov.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="bell" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-lg font-black mb-3">Varsling før vask</h3>
+          <p class="text-zinc-600 text-sm leading-relaxed">Dere får beskjed før hver planlagte vask.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="sparkles" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-lg font-black mb-3">Utvendig og innvendig</h3>
+          <p class="text-zinc-600 text-sm leading-relaxed">Vi kan vaske både utside og innside etter avtale.</p>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl shadow-sm border border-black/5">
+          <i data-lucide="handshake" class="w-10 h-10 text-apex-orange mb-5"></i>
+          <h3 class="text-lg font-black mb-3">Forutsigbart</h3>
+          <p class="text-zinc-600 text-sm leading-relaxed">Fast oppfølging, fast kontakt og ryddig avtale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PASSER FOR -->
+  <section class="bg-white text-black py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Hvem passer det for?
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          For lokaler der førsteinntrykket betyr noe
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Butikker og showroom</div>
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Klinikker og behandlingsrom</div>
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Restauranter og kaféer</div>
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Kontorer og resepsjoner</div>
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Treningssentre</div>
+        <div class="bg-apex-soft p-6 rounded-2xl font-bold">Lokaler med mye glass</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERANSER -->
+  <section id="referanser" class="bg-apex-soft text-black py-24">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="max-w-3xl mb-14">
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Referanser
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          Ekte kunder og utførte oppdrag
+        </h2>
+        <p class="text-zinc-600 text-lg leading-relaxed">
+          Her viser vi et utvalg av næringslokaler vi har jobbet med. Hovedsiden beholder den større bildefremvisningen, mens denne siden viser referansene mer ryddig og salgsrettet.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-black/5">
+          <img src="konstabel-3.jpg" alt="Konstabel vindusvask" class="w-full h-72 object-cover">
+          <div class="p-8">
+            <p class="text-apex-orange text-xs font-black uppercase tracking-[0.2em] mb-3">Månedlig abonnement</p>
+            <h3 class="text-3xl font-black mb-4">Konstabel</h3>
+            <p class="text-zinc-600 leading-relaxed">
+              Konstabel var blant Apex Cleanings første abonnementskunder. Vi følger opp med fast vindusvask for å holde butikkfront og showroom rent, innbydende og enkelt å vedlikeholde over tid.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-black/5">
+          <img src="sport spine.jpeg" alt="Sport Spine vindusvask" class="w-full h-72 object-cover">
+          <div class="p-8">
+            <p class="text-apex-orange text-xs font-black uppercase tracking-[0.2em] mb-3">Månedlig abonnement</p>
+            <h3 class="text-3xl font-black mb-4">Sport&Spine</h3>
+            <p class="text-zinc-600 leading-relaxed">
+              Sport&Spine har valgt en fast avtale for å holde vinduene presentable for kunder og pasienter gjennom året.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-black/5">
+          <img src="peludo1.jpeg" alt="Peludo vindusvask" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-black mb-2">Peludo</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed">Tidligere utført vindusvask for næringslokale på Tøyen.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-black/5">
+          <img src="konstabel-1.jpg" alt="Butikkfront vindusvask" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-black mb-2">Butikkfront</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed">Rene vinduer bidrar til et bedre førsteinntrykk fra gaten.</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden shadow-sm border border-black/5">
+          <img src="sport spinen.jpeg" alt="Klinikk vindusvask" class="w-full h-52 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-black mb-2">Klinikk</h3>
+            <p class="text-zinc-600 text-sm leading-relaxed">Fast vedlikehold gjør lokalet mer innbydende for besøkende.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERVALLER -->
+  <section class="bg-white text-black py-24">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-start">
+      <div>
+        <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+          Anbefalte intervaller
+        </p>
+        <h2 class="text-4xl md:text-5xl font-black mb-5">
+          Hvor ofte bør næringslokaler vaske vinduene?
+        </h2>
+        <p class="text-zinc-600 text-lg leading-relaxed">
+          Riktig intervall avhenger av beliggenhet, trafikk, vær og hvor viktig innsyn og fasadeuttrykk er for lokalet.
+        </p>
+      </div>
+
+      <div class="bg-apex-soft rounded-3xl p-8 shadow-sm border border-black/5">
+        <div class="space-y-5">
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Butikker med mye innsyn</span>
+            <span class="text-apex-orange font-black">Månedlig</span>
+          </div>
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Klinikker og kontorer</span>
+            <span class="text-apex-orange font-black">1–2 mnd</span>
+          </div>
+          <div class="flex justify-between gap-6 border-b border-zinc-200 pb-4">
+            <span class="font-bold">Restauranter og kaféer</span>
+            <span class="text-apex-orange font-black">Månedlig / behov</span>
+          </div>
+          <div class="flex justify-between gap-6">
+            <span class="font-bold">Mindre lokaler</span>
+            <span class="text-apex-orange font-black">2–3 mnd</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="kontakt" class="bg-gradient-to-br from-zinc-950 to-black py-24">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+      <p class="text-apex-orange text-xs font-black uppercase tracking-[0.25em] mb-4">
+        Abonnementstilbud
+      </p>
+      <h2 class="text-4xl md:text-6xl font-black mb-6">
+        Ønsker du fast vindusvask for ditt lokale?
+      </h2>
+      <p class="text-zinc-400 text-lg max-w-2xl mx-auto mb-9">
+        Send oss en kort henvendelse, så kan vi foreslå et passende intervall og gi et uforpliktende pristilbud.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="mailto:daniel.hojem@hotmail.no"
+          class="inline-flex items-center justify-center bg-apex-orange text-white font-black px-8 py-4 rounded-xl hover:bg-orange-600 transition whitespace-nowrap min-w-[180px]">
+          Send e-post
+        </a>
+        <a href="tel:45477027" class="border border-white/20 px-8 py-4 rounded-xl font-black hover:border-apex-orange hover:text-apex-orange transition">
+          Ring 454 77 027
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-white/10 py-10">
+    <div class="max-w-7xl mx-auto px-5 flex flex-col md:flex-row justify-between gap-6 text-sm text-zinc-500">
+      <p>© 2026 Apex Cleaning</p>
+      <p>Vindusvask for næringslokaler i Oslo og omegn</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
