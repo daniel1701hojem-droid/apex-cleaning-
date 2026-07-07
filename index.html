@@ -1587,8 +1587,11 @@ onclick="openReferenceCase('konstabel-case')"
       </div>
 
       <!-- SPORT SPINE -->
-      <div class="bg-white rounded-2xl border border-zinc-200 shadow-sm overflow-hidden hover:shadow-xl transition-all">
-        <img src="sport spine.jpeg" class="w-full h-56 object-cover">
+<button
+  type="button"
+  onclick="openReferenceCase('sportspine-case')"
+  class="bg-white rounded-2xl border border-zinc-200 shadow-sm overflow-hidden hover:shadow-xl transition-all text-left w-full"
+>        <img src="sport spine.jpeg" class="w-full h-56 object-cover">
         <div class="p-6">
           <h3 class="text-xl font-bold text-brand-black">Sport Spine</h3>
           <p class="text-brand-orange font-semibold text-sm mt-1">Månedlig abonnement</p>
@@ -1600,7 +1603,7 @@ onclick="openReferenceCase('konstabel-case')"
             <li>✔ Profesjonell butikkfront</li>
           </ul>
         </div>
-      </div>
+     </button>
 
       <!-- HARALD GYM -->
       <div class="bg-white rounded-2xl border border-zinc-200 shadow-sm overflow-hidden hover:shadow-xl transition-all">
@@ -1862,7 +1865,201 @@ onclick="openReferenceCase('konstabel-case')"
 
   </div>
 </section>
-<!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
+
+<!-- SPORT&SPINE CASE SIDE -->
+<section id="sportspine-case" class="hidden bg-white">
+
+  <!-- HERO -->
+  <div class="relative min-h-[520px] bg-brand-black text-white overflow-hidden">
+    <img 
+      src="sport spine.jpeg" 
+      alt="Sport&Spine butikkfront"
+      class="absolute inset-0 w-full h-full object-cover opacity-75"
+    >
+    <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/45 to-black/10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 sm:py-36">
+      <div class="max-w-2xl">
+        <p class="text-brand-orange text-xs font-bold uppercase tracking-widest font-mono mb-4">
+          Referanseprosjekt
+        </p>
+
+        <h1 class="text-5xl sm:text-6xl font-extrabold font-display tracking-tight">
+          Sport&amp;Spine
+        </h1>
+
+        <p class="mt-5 text-2xl text-zinc-100 leading-snug">
+          Fast vindusvask for klinikk og behandlingslokale
+        </p>
+
+        <div class="mt-8 inline-flex items-center gap-2 bg-brand-orange/15 border border-brand-orange/40 text-brand-orange px-5 py-3 rounded-full text-sm font-bold">
+          <i data-lucide="calendar-check" class="w-4 h-4"></i>
+          Fast vedlikeholdsavtale
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+      
+      <!-- OM KUNDEN -->
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Om kunden
+          </h2>
+        </div>
+
+        <p class="text-zinc-650 leading-relaxed text-base">
+          Sport&amp;Spine er en klinikk hvor et rent og profesjonelt førsteinntrykk er viktig
+          for både kunder og pasienter. Rene vinduer bidrar til at lokalet fremstår ryddig,
+          lyst og godt vedlikeholdt gjennom året.
+        </p>
+
+        <p class="text-zinc-650 leading-relaxed text-base mt-5">
+          Apex Cleaning bistår med fast vindusvask slik at glassflater og inngangsparti
+          holdes presentable uten at kunden trenger å bestille hver vask manuelt.
+        </p>
+      </div>
+
+      <!-- PROSJEKTINFO -->
+      <div class="bg-white rounded-3xl border border-zinc-200 shadow-xl p-8">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="bg-brand-orange/10 text-brand-orange p-4 rounded-2xl">
+            <i data-lucide="clipboard-check" class="w-6 h-6"></i>
+          </div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Prosjektinformasjon
+          </h2>
+        </div>
+
+        <div class="divide-y divide-zinc-200 text-sm">
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Kunde</span>
+            <span class="font-bold text-brand-black">Sport&amp;Spine</span>
+          </div>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Type</span>
+            <span class="font-bold text-brand-black">Klinikk</span>
+          </div>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Tjeneste</span>
+            <span class="font-bold text-brand-black">Vindusvask</span>
+          </div>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Frekvens</span>
+            <span class="font-bold text-brand-black">Fast avtale</span>
+          </div>
+          <div class="py-4 flex justify-between gap-4">
+            <span class="text-zinc-500 font-semibold">Status</span>
+            <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">
+              Fast vedlikehold
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- HVA VI GJORDE / RESULTAT -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-20">
+
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Hva vi utførte
+          </h2>
+        </div>
+
+        <ul class="space-y-4 text-zinc-700">
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Utvendig vindusvask
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Vask av klinikkfront
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Vedlikehold av glassflater
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Ryddig oppfølging
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="text-brand-orange">✓</span> Fast vedlikeholdsavtale
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+          <h2 class="text-3xl font-extrabold font-display text-brand-black">
+            Resultatet
+          </h2>
+        </div>
+
+        <p class="text-zinc-650 leading-relaxed text-base">
+          Klinikken får jevnlig vedlikehold av vinduene, slik at lokalet holder et rent
+          og profesjonelt uttrykk gjennom året. Dette gir et bedre førsteinntrykk for
+          både kunder, pasienter og forbipasserende.
+        </p>
+
+        <div class="mt-8 bg-orange-50 border border-orange-100 rounded-2xl p-6 flex gap-4">
+          <div class="text-brand-orange text-3xl">☆</div>
+          <div>
+            <h3 class="font-extrabold text-brand-black">
+              Rent førsteinntrykk for kunder og pasienter.
+            </h3>
+            <p class="text-sm text-zinc-650 mt-2">
+              Sport&amp;Spine får en ryddig og presentabel fasade gjennom fast oppfølging.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GALLERI CAROUSEL -->
+    <div class="mt-20">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-8 w-1 bg-brand-orange rounded-full"></div>
+        <h2 class="text-3xl font-extrabold font-display text-brand-black">
+          Bilder fra oppdraget
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <img src="sport spine.jpeg" class="rounded-2xl shadow-lg w-full h-72 object-cover" alt="Sport&Spine bilde 1">
+        <img src="sport spinen.jpeg" class="rounded-2xl shadow-lg w-full h-72 object-cover" alt="Sport&Spine bilde 2">
+        <img src="sportspinen2.jpeg" class="rounded-2xl shadow-lg w-full h-72 object-cover" alt="Sport&Spine bilde 3">
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-20 bg-orange-50 border border-orange-100 rounded-3xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div>
+        <h2 class="text-2xl font-extrabold font-display text-brand-black">
+          Vil du ha en like ren og profesjonell fasade?
+        </h2>
+        <p class="text-zinc-650 mt-2">
+          Vi skreddersyr vedlikeholdsløsninger for klinikker, butikker og næringslokaler.
+        </p>
+      </div>
+
+      <a href="#kontakt" class="bg-brand-orange hover:bg-brand-orange-light text-white font-bold px-8 py-4 rounded-xl uppercase tracking-wider text-sm transition-all">
+        Få gratis befaring →
+      </a>
+    </div>
+
+  </div>
+</section>        
+        
+        <!-- DIRECT CONTACT & FAQ ACCORDIONS SECTION -->
     <section id="kontakt" class="py-20 sm:py-24 bg-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
