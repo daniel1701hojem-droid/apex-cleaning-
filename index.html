@@ -2275,6 +2275,108 @@ onclick="openReferenceCase('konstabel-case')"
         updateKonstabelGallery();
     }
 }
+const sportspineImages = [
+  {
+    src: "sport spine.jpeg",
+    caption: "Sport&Spine – Fast abonnement på vindusvask"
+  },
+  {
+    src: "sport spinen.jpeg",
+    caption: "Sport&Spine – Rene vinduer for et profesjonelt førsteinntrykk"
+  },
+  {
+    src: "sportspinen2.jpeg",
+    caption: "Sport&Spine – Jevnlig vedlikehold av glassflater"
+  }
+];
+
+let sportspineIndex = 0;
+
+function updateSportspineGallery() {
+  const mainImg = document.getElementById("sportspine-main-img");
+  const caption = document.getElementById("sportspine-main-caption");
+  const progress = document.getElementById("sportspine-gallery-progress");
+  const thumbs = document.querySelectorAll(".sportspine-thumb");
+
+  if (!mainImg || !caption || !progress) return;
+
+  mainImg.src = sportspineImages[sportspineIndex].src;
+  caption.textContent = sportspineImages[sportspineIndex].caption;
+  progress.textContent = `${sportspineIndex + 1} av ${sportspineImages.length}`;
+
+  thumbs.forEach((thumb, index) => {
+    thumb.classList.toggle("border-brand-orange", index === sportspineIndex);
+    thumb.classList.toggle("scale-[1.02]", index === sportspineIndex);
+    thumb.classList.toggle("opacity-70", index !== sportspineIndex);
+  });
+}
+
+function openSportspineLightbox() {
+  let lightbox = document.getElementById("sportspine-lightbox");
+
+  if (!lightbox) {
+    lightbox = document.createElement("div");
+    lightbox.id = "sportspine-lightbox";
+    lightbox.className = "fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4";
+    lightbox.innerHTML = `
+      <button onclick="closeSportspineLightbox()" class="absolute top-6 right-6 text-white hover:text-brand-orange text-3xl font-bold">×</button>
+
+      <button onclick="prevSportspineImage(event)" class="absolute left-6 text-white hover:text-brand-orange text-5xl font-bold hidden sm:block">‹</button>
+
+      <div class="max-w-5xl w-full text-center">
+        <img id="sportspine-lightbox-img" src="" alt="Sport&Spine bilde" class="max-h-[75vh] mx-auto object-contain rounded-2xl shadow-2xl">
+        <p id="sportspine-lightbox-caption" class="text-white text-sm font-semibold mt-4"></p>
+        <p id="sportspine-lightbox-progress" class="text-brand-orange text-xs font-bold uppercase tracking-widest mt-2"></p>
+      </div>
+
+      <button onclick="nextSportspineImage(event)" class="absolute right-6 text-white hover:text-brand-orange text-5xl font-bold hidden sm:block">›</button>
+    `;
+    document.body.appendChild(lightbox);
+  }
+
+  updateSportspineLightbox();
+  lightbox.classList.remove("hidden");
+}
+
+function closeSportspineLightbox() {
+  const lightbox = document.getElementById("sportspine-lightbox");
+  if (lightbox) lightbox.classList.add("hidden");
+}
+
+function updateSportspineLightbox() {
+  const img = document.getElementById("sportspine-lightbox-img");
+  const caption = document.getElementById("sportspine-lightbox-caption");
+  const progress = document.getElementById("sportspine-lightbox-progress");
+
+  if (!img || !caption || !progress) return;
+
+  img.src = sportspineImages[sportspineIndex].src;
+  caption.textContent = sportspineImages[sportspineIndex].caption;
+  progress.textContent = `${sportspineIndex + 1} av ${sportspineImages.length}`;
+}
+
+function nextSportspineImage(event) {
+  if (event) event.stopPropagation();
+  sportspineIndex = (sportspineIndex + 1) % sportspineImages.length;
+  updateSportspineGallery();
+  updateSportspineLightbox();
+}
+
+function prevSportspineImage(event) {
+  if (event) event.stopPropagation();
+  sportspineIndex = (sportspineIndex - 1 + sportspineImages.length) % sportspineImages.length;
+  updateSportspineGallery();
+  updateSportspineLightbox();
+}
+
+document.querySelectorAll(".sportspine-thumb").forEach((thumb, index) => {
+  thumb.addEventListener("click", () => {
+    sportspineIndex = index;
+    updateSportspineGallery();
+  });
+});
+
+updateSportspineGallery();
 </script>
 </body>
 </html>
