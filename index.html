@@ -1634,45 +1634,49 @@ onclick="openReferenceCase('konstabel-case')"
         </p>
       </div>
 
-      <!-- PROSJEKTINFO -->
-      <div class="bg-white rounded-3xl border border-zinc-200 shadow-xl p-8">
-   <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">         
-  <div class="bg-brand-orange/10 text-brand-orange p-4 rounded-2xl">
-            <i data-lucide="clipboard-check" class="w-6 h-6"></i>
-          </div>
-          <h2 class="text-3xl font-extrabold font-display text-brand-black">
-            Prosjektinformasjon
-          </h2>
-        </div>
-
-        <div class="divide-y divide-zinc-200 text-sm">
-       <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">           
-         <span class="text-zinc-500 font-semibold">Kunde</span>
-            <span class="font-bold text-brand-black">Konstabel</span>
-          </div>
-<div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">           
-  <span class="text-zinc-500 font-semibold">Type</span>
-            <span class="font-bold text-brand-black">Interiørbutikk</span>
-          </div>
-<div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">            
-  <span class="text-zinc-500 font-semibold">Tjeneste</span>
-            <span class="font-bold text-brand-black">Vindusvask</span>
-          </div>
-<div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">           
-  <span class="text-zinc-500 font-semibold">Frekvens</span>
-            <span class="font-bold text-brand-black">Månedlig</span>
-          </div>
-<div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">            
-  <span class="text-zinc-500 font-semibold">Status</span>
-            <span class="inline-flex w-fit bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">
-  Fast abonnement
-</span>
-          </div>
-        </div>
-      </div>
-
+     <!-- PROSJEKTINFO -->
+<div class="bg-white rounded-3xl border border-zinc-200 shadow-xl p-6 sm:p-8 w-full max-w-full overflow-hidden">
+  <div class="flex flex-col items-start gap-4">         
+    <div class="bg-brand-orange/10 text-brand-orange p-4 rounded-2xl shrink-0">
+      <i data-lucide="clipboard-check" class="w-6 h-6"></i>
     </div>
 
+    <h2 class="text-2xl sm:text-3xl font-extrabold font-display text-brand-black break-words max-w-full">
+      Prosjektinformasjon
+    </h2>
+  </div>
+
+  <div class="divide-y divide-zinc-200 text-sm mt-6">
+    <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
+      <span class="text-zinc-500 font-semibold">Kunde</span>
+      <span class="font-bold text-brand-black break-words">Konstabel</span>
+    </div>
+
+    <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
+      <span class="text-zinc-500 font-semibold">Type</span>
+      <span class="font-bold text-brand-black break-words">Interiørbutikk</span>
+    </div>
+
+    <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
+      <span class="text-zinc-500 font-semibold">Tjeneste</span>
+      <span class="font-bold text-brand-black break-words">Vindusvask</span>
+    </div>
+
+    <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
+      <span class="text-zinc-500 font-semibold">Frekvens</span>
+      <span class="font-bold text-brand-black break-words">Månedlig</span>
+    </div>
+
+    <div class="py-4 flex flex-col sm:flex-row sm:justify-between gap-2 sm:gap-4">
+      <span class="text-zinc-500 font-semibold">Status</span>
+      <span class="inline-flex w-fit bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold">
+        Fast abonnement
+      </span>
+    </div>
+  </div>
+</div>
+
+</div>
     <!-- HVA VI GJORDE / RESULTAT -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 mt-20">
 
